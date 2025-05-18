@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Askesis Calistenia - Mes 3, Semana 4: ¡Test Final y Celebración!</title>
+    <meta name="description" content="Detalle completo de la Semana 4 del Mes 3 del Programa de Iniciación a la Calistenia de Askesis. Testeo final de PBs, celebración y descarga activa.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'askesis-blue': '#005A9C',
+                        'askesis-green': '#008037',
+                        'askesis-lime-green': '#84cc16',
+                        'askesis-orange': '#F58220', // Original orange
+                        'askesis-calisthenics-orange': '#f39c12',
+                        'askesis-deep-purple': '#5e35b1',
+                        'askesis-red': '#e74c3c',
+                        'askesis-teal': '#14b8a6',
+                        'askesis-amber': '#f59e0b',
+                        'askesis-gold': '#ffc107',
+                        'askesis-celebration-orange': '#ff6f00', // New color for Mes 3, Semana 4
+                        'askesis-dark': '#1a202c',
+                        'askesis-gray': '#2d3748',
+                        'askesis-light-gray': '#edf2f7',
+                        'askesis-text-dark': '#343a40',
+                        'askesis-text-body': '#4A5568',
+                        'askesis-bg-light': '#f8f9fa',
+                        'askesis-accent-celebration-orange-light': '#fff3e0', // Accent for celebration-orange
+                    },
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --askesis-calisthenics-orange: #f39c12;
+            --askesis-celebration-orange: #ff6f00; /* Main color for this week */
+            --askesis-dark: #1a202c;
+            --askesis-text-body: #4A5568;
+            --askesis-bg-white: #ffffff;
+            --askesis-accent-celebration-orange-light: #fff3e0; /* Accent for this week */
+            --askesis-light-gray-bg: #f8f9fa;
+            --askesis-card-bg: #ffffff;
+            --askesis-border-color: #e5e7eb;
+            --askesis-blue-icon: #005A9C; 
+            --askesis-green-checkmark: #008037;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Montserrat', 'sans-serif';
+            color: var(--askesis-text-body);
+            background-color: var(--askesis-light-gray-bg);
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding-top: 70px; /* Fixed header adjustment */
+        }
+        
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--askesis-dark);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            padding: 0.75rem 0;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .header-logo a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .header-nav a {
+            color: white;
+            margin-left: 1.2rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            padding: 0.5rem 0.8rem;
+            border-radius: 0.25rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .header-nav a:not(.nav-cta-button-header):hover {
+            background-color: var(--askesis-calisthenics-orange);
+            color: var(--askesis-dark);
+        }
+        .nav-cta-button-header {
+            background-color: var(--askesis-orange); /* Original Askesis Orange */
+            color: white !important;
+            padding: 0.6rem 1.2rem !important;
+            border-radius: 0.375rem;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .nav-cta-button-header:hover {
+            background-color: #d97019;
+            transform: scale(1.05);
+        }
+        
+        .hero-semana {
+            background: linear-gradient(rgba(255, 111, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/OmniaInBonum/WEB-Akesis/main/jimeng-2025-05-17-594-Ultra-realistic%20photo%20of%20a%20shirtless%20athletic%20man%20doing%20strict%20pull-ups%20on%20a%20m....jpeg') no-repeat center center;
+            background-size: cover;
+            padding: 5rem 1.5rem;
+            color: white;
+            text-align: center;
+        }
+        .hero-semana h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5em;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 4px solid var(--askesis-calisthenics-orange); 
+            text-transform: uppercase;
+            display: inline-block;
+        }
+        .hero-semana p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 1rem auto 0 auto;
+            line-height: 1.8;
+            color: var(--askesis-light-gray);
+        }
+        .hero-semana p strong { color: var(--askesis-calisthenics-orange); font-weight: bold;}
+
+        .container-main { 
+            max-width: 1024px; 
+            margin: 2.5rem auto; 
+            padding: 2.5rem; 
+            background-color: var(--askesis-bg-white); 
+            border-radius: 12px; 
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.09); 
+        }
+        
+        .intro-box-semana {
+            background-color: var(--askesis-accent-celebration-orange-light); 
+            border-left: 5px solid var(--askesis-celebration-orange);
+            padding: 1.8rem 2.2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .intro-box-semana h3 {
+            font-family: 'Roboto', sans-serif;
+            color: var(--askesis-celebration-orange);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .intro-box-semana p, .intro-box-semana ul li {
+            font-size: 1em;
+            margin-bottom: 0.6rem;
+        }
+        .intro-box-semana ul { list-style: disc; padding-left: 1.5rem; margin-top: 0.5rem;} 
+        .intro-box-semana strong { color: var(--askesis-dark); font-weight: bold; }
+
+        .dia-card-askesis-style {
+            background-color: var(--askesis-card-bg);
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            margin-bottom: 3.5rem;
+            overflow: hidden;
+            border: 1px solid var(--askesis-border-color);
+        }
+        .dia-card-askesis-style .dia-header-askesis-style {
+            background-color: var(--askesis-celebration-orange); 
+            color: white; 
+            padding: 1.3rem 2rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6em;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid var(--askesis-calisthenics-orange);
+        }
+        .dia-card-askesis-style .dia-header-askesis-style i { margin-right: 1rem;}
+        .dia-card-askesis-style .dia-content-askesis-style { 
+            padding: 2rem; 
+        }
+        
+        .bloque-entrenamiento-askesis-style { 
+             margin-bottom: 3rem; 
+             padding: 1.5rem;
+             border-radius: 8px;
+             background-color: var(--askesis-light-gray-bg); 
+             border: 1px solid #dde4ed; 
+        }
+         .bloque-entrenamiento-askesis-style:last-child { margin-bottom: 0;}
+
+        .bloque-entrenamiento-askesis-style h4 { 
+            font-family: 'Roboto', sans-serif;
+            color: var(--askesis-calisthenics-orange);
+            font-size: 1.35em;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--askesis-calisthenics-orange);
+            display: flex;
+            align-items: center;
+        }
+         .bloque-entrenamiento-askesis-style h4 i { margin-right: 0.75rem; font-size: 0.95em; }
+
+        .ejercicio-detalle { 
+            margin-bottom: 2.5rem; 
+            padding-bottom: 2rem; 
+            border-bottom: 1px dashed var(--askesis-border-color);
+        }
+        .ejercicio-detalle:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+        .ejercicio-detalle .nombre-ejercicio {
+            font-family: 'Roboto', sans-serif;
+            color: var(--askesis-dark);
+            font-size: 1.25em;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .ejercicio-detalle .nombre-ejercicio i {
+            color: var(--askesis-celebration-orange); 
+            margin-right: 0.75rem;
+            font-size: 1em;
+        }
+
+        table.tabla-parametros {
+            width: 100%;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            border-collapse: collapse;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            border-radius: 8px;
+            overflow:hidden;
+        }
+        table.tabla-parametros th, table.tabla-parametros td {
+            border: 1px solid var(--askesis-border-color);
+            padding: 0.9rem 1rem;
+            text-align: center;
+        }
+        table.tabla-parametros th {
+            background-color: var(--askesis-accent-celebration-orange-light); 
+            color: var(--askesis-celebration-orange);
+            font-weight: 700;
+            font-size: 1em;
+        }
+        table.tabla-parametros td {
+            background-color: var(--askesis-bg-white);
+        }
+        
+        .descripcion-ejercicio, .tecnica-ejercicio, .musculos-ejercicio {
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        .descripcion-ejercicio h5, .tecnica-ejercicio h5, .musculos-ejercicio h5 {
+            font-family: 'Roboto', sans-serif; 
+            color: var(--askesis-blue-icon); 
+            font-size: 1.15em;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+        }
+         .descripcion-ejercicio h5 i, .tecnica-ejercicio h5 i, .musculos-ejercicio h5 i {
+            margin-right: 0.6rem;
+            font-size: 0.95em;
+         }
+
+        .tecnica-ejercicio ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0.75rem;
+        }
+        .tecnica-ejercicio ul li {
+            position: relative;
+            padding-left: 2em;
+            margin-bottom: 0.6rem;
+            line-height: 1.7;
+        }
+        .tecnica-ejercicio ul li::before {
+            content: '\f058'; 
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 6px;
+            color: var(--askesis-green-checkmark);
+            font-size: 1.1em;
+        }
+        .btn-youtube {
+            display: inline-flex;
+            align-items: center;
+            background-color: #FF0000;
+            color: white !important;
+            padding: 0.7rem 1.3rem !important;
+            border-radius: 0.375rem;
+            text-decoration: none !important;
+            font-weight: 700;
+            font-size: 0.95em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 1.2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .btn-youtube:hover {
+            background-color: #CC0000;
+            color: white !important;
+            transform: translateY(-2px);
+        }
+        .btn-youtube i { margin-right: 0.75rem; }
+        
+        .info-box-dia {
+            padding: 1.5rem 2rem;
+            border-radius: 10px;
+            margin-top: 2.5rem;
+            font-size: 0.95rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+            background-color: var(--askesis-accent-orange-light);
+            border-left: 6px solid var(--askesis-calisthenics-orange);
+        }
+         .info-box-dia h4{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            color: var(--askesis-calisthenics-orange);
+        }
+         .info-box-dia h4 i { margin-right: 0.75rem; }
+
+        .cta-button-askesis { /* New button style for Askesis CTA */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--askesis-blue); /* Askesis Blue */
+            color: white !important;
+            padding: 0.8rem 1.8rem;
+            border-radius: 0.375rem;
+            font-weight: 700;
+            font-size: 1.05em;
+            text-transform: uppercase;
+            text-decoration: none !important;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        .cta-button-askesis:hover {
+            background-color: #004170; /* Darker Askesis Blue */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+        .cta-button-askesis i {
+            margin-right: 0.75rem;
+        }
+
+
+        footer {
+            background-color: var(--askesis-dark);
+            color: #a0aec0;
+            padding: 4rem 1rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        footer .footer-logo {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        footer .footer-tagline { font-size: 0.9rem; color: #718096; margin-bottom: 2rem;}
+        footer .copyright-footer { font-size: 0.875rem; color: #718096; margin-top: 2rem; border-top: 1px solid #4A5568; padding-top: 1.5rem;}
+        footer .footer-links a { color: #a0aec0; margin: 0 0.75rem; transition: color 0.3s; font-weight: 500;}
+        footer .footer-links a:hover { color: var(--askesis-orange); }
+
+
+        @media (max-width: 768px) {
+            body { padding-top: 60px; }
+            .header-content { padding: 0.5rem 1rem;}
+            .header-logo a { font-size: 1.6em;}
+            .header-nav a { font-size: 0.8rem; margin-left: 0.8rem; padding: 0.4rem 0.6rem;}
+            .container-main { padding: 1.5rem; margin: 2rem auto;}
+            .hero-semana h1 { font-size: 2.2em; }
+            .hero-semana p { font-size: 1.1em; }
+            .dia-card-askesis-style .dia-header-askesis-style { font-size: 1.4em; padding: 1.1rem 1.5rem;}
+            .bloque-entrenamiento-askesis-style h4 { font-size: 1.25em; }
+            .ejercicio-detalle .nombre-ejercicio { font-size: 1.15em; }
+            table.tabla-parametros { font-size: 0.9rem;}
+            table.tabla-parametros th, table.tabla-parametros td { padding: 0.7rem;}
+            .cta-button-askesis { font-size: 0.95em; padding: 0.7rem 1.5rem;}
+        }
+        @media (max-width: 480px) {
+             body { padding-top: 55px; }
+             .header-logo a { font-size: 1.4em;}
+             .header-nav a { font-size: 0.75rem; margin-left: 0.5rem; padding: 0.3rem 0.5rem;}
+             .nav-cta-button-header {padding: 0.4rem 0.8rem; font-size:0.75rem;}
+             .hero-semana h1 { font-size: 2em; }
+             .hero-semana p { font-size: 1em; }
+             .dia-card-askesis-style .dia-header-askesis-style { font-size: 1.3em; }
+             .bloque-entrenamiento-askesis-style h4 { font-size: 1.2em; }
+             .ejercicio-detalle .nombre-ejercicio { font-size: 1.1em; }
+             .btn-youtube { padding: 0.6rem 1.1rem !important; font-size: 0.9em;}
+             .cta-button-askesis { font-size: 0.9em; padding: 0.6rem 1.2rem;}
+        }
+
+    </style>
+</head>
+
+<body class="bg-askesis-bg-light">
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-logo">
+                <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html">Askesis</a>
+            </div>
+            <nav class="header-nav">
+                <a href="https://omniainbonum.github.io/WEB-Akesis/WEB%20Calistenia%203%20meses%20iniciante.html">Plan General Calistenia</a>
+                <a href="https://wa.me/56975401150?text=Hola%20Askesis%2C%20tengo%20una%20duda%20sobre%20el%20Mes%203%2C%20Semana%204%20del%20Plan%20de%20Calistenia." target="_blank" class="nav-cta-button-header">
+                    <i class="fab fa-whatsapp"></i> Consultar Dudas
+                </a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="hero-semana" id="hero-mes3-semana4-calistenia">
+        <div class="content-wrapper">
+            <h1>Mes 3 - Semana 4: ¡Test Final y Celebración!</h1>
+            <p>¡La última semana del programa! Es el momento de <strong>poner a prueba todo tu progreso</strong> con un test final, celebrar tus logros y prepararte para tus próximos desafíos en la calistenia. ¡Has llegado muy lejos!</p>
+        </div>
+    </div>
+
+    <div class="container-main">
+        <div class="intro-box-semana general">
+            <h3><i class="fas fa-flag-checkered"></i> Objetivos Clave de Mes 3, Semana 4:</h3>
+            <ul>
+                <li>Realizar un <strong>test de máximas repeticiones/tiempo</strong> en todas las habilidades clave: dominadas, flexiones, fondos y L-Sit (o tus progresiones más avanzadas).</li>
+                <li>Disfrutar del proceso de testeo, enfocándote en dar tu mejor esfuerzo con <strong>técnica impecable</strong>.</li>
+                <li>Celebrar la finalización del programa y reconocer todo el esfuerzo y dedicación invertidos.</li>
+                <li>¡Y lo más importante! <strong>Planificar cómo seguirás conquistando nuevas metas con Askesis.</strong></li>
+            </ul>
+            <p class="mt-3"><strong>Recordatorio Importante:</strong> Esta semana es para medir tu progreso y disfrutar. Asegúrate de estar bien descansado antes de cada sesión de testeo. ¡Lo más importante es haber sido constante y haber aprendido a mover tu cuerpo!</p>
+        </div>
+
+        <section id="dia1-m3s4" class="dia-card-askesis-style">
+            <div class="dia-header-askesis-style"><i class="fas fa-award mr-3"></i>Día 1: Test Final de Empuje y L-Sit</div>
+            <div class="dia-content-askesis-style">
+                
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-fire-alt mr-3"></i>I. Preparación Neuromuscular y Articular (Completa y Específica)</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-running"></i>Movilidad y Activación Pre-Test</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración/Reps</th></tr></thead><tbody><tr><td>Movilidad Articular Dinámica (completa, con énfasis en hombros, codos, muñecas, cadera)</td><td>10-12 min</td></tr><tr><td>Activación Escapular (variada, incluyendo pseudo plancha leans y push-up plus)</td><td>2 series x 8-10 reps</td></tr><tr><td>Plancha sobre manos con ligeros balanceos y elevaciones de extremidades</td><td>2 series x 20-30s</td></tr><tr><td>Algunas repeticiones ligeras de los ejercicios a testear (ej. 2-3 flexiones fáciles)</td><td>Según necesidad</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Calentamiento exhaustivo y específico para preparar el cuerpo para el máximo esfuerzo en los tests de empuje y L-Sit.</p></div>
+                        <a href="#VIDEO_YOUTUBE_CALENTAMIENTO_TEST_EMPUJE_M3S4" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Calentamiento Test M3S4</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-trophy mr-3"></i>II. Bloque Principal: Test Final de Empuje y L-Sit</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-level-up-alt"></i>1. Test: Máximas Flexiones (Variante más avanzada lograda)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>1-2</td><td>Máx. reps (AMRAP) con técnica perfecta</td><td>3-4 min</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Realiza una serie (o dos si la primera fue muy corta y sientes que puedes mejorar) buscando el máximo número de repeticiones de tu variante de flexión más avanzada (suelo, declinada, pseudo plancha, etc.) con técnica impecable.</p></div>
+                        <a href="#VIDEO_YOUTUBE_TEST_FINAL_FLEXIONES_M3S4" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica Test M3S4</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-bars"></i>2. Test: Máximas Reps/Negativas Fondos (Variante más avanzada lograda)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>1-2</td><td>Máx. reps (AMRAP) / Máx. Negativas con control</td><td>3-4 min</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Realiza una serie (o dos) buscando el máximo número de repeticiones de fondos en paralelas (o tu progresión actual, ej. negativas muy lentas, fondos en banco con lastre) con técnica estricta.</p></div>
+                        <a href="#VIDEO_YOUTUBE_TEST_FINAL_FONDOS_M3S4" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica Test M3S4</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-signature"></i>3. Test: Máximo Sostén L-Sit (Variante más avanzada lograda)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Tiempo</th><th>Descanso</th></tr></thead><tbody><tr><td>1-2</td><td>Máx. tiempo (AMRAP) con forma perfecta</td><td>3-4 min</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Busca tu máximo tiempo de sostén en tu variante de L-Sit más avanzada (Tuck, una pierna, completo) manteniendo la mejor forma posible.</p></div>
+                         <a href="#VIDEO_YOUTUBE_TEST_FINAL_LSIT_M3S4" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica Test M3S4</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-spa mr-2"></i>III. Enfriamiento y Celebración</h4>
+                     <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-glass-cheers"></i>Estiramientos Completos y Reflexión Final</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración</th></tr></thead><tbody><tr><td>Estiramientos de Pectoral, Deltoides, Tríceps, Abdominales, Flexores de Cadera, Isquiosurales, Muñecas</td><td>10-15 min total</td></tr><tr><td>Respiración y Relajación</td><td>5 min</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Un enfriamiento completo y relajante. Tómate un momento para felicitarte por el esfuerzo y el progreso de estos 3 meses.</p></div>
+                         <a href="#VIDEO_YOUTUBE_ENFRIAMIENTO_FINAL_DIA1_M3S4" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Rutina Enfriamiento M3S4</a>
+                    </div>
+                </div>
+                <div class="info-box-dia tip"><h4><i class="fas fa-lightbulb mr-2"></i>Reflexión Día 1 (Mes 3, Semana 4):</h4><p>¡Test de empuje completado! Anota tus marcas finales. Compara con tus inicios y observa el increíble progreso. ¡Siéntete orgulloso!</p></div>
+            </div>
+        </section> 
+
+        <section id="dia2-m3s4" class="dia-card-askesis-style">
+            <div class="dia-header-askesis-style"><i class="fas fa-award mr-3"></i>Día 2: Test Final de Tracción y Core Posterior</div>
+            <div class="dia-content-askesis-style">
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-fire-alt mr-2"></i>I. Preparación Neuromuscular y Articular (Completa y Específica)</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-running"></i>Movilidad y Activación Pre-Test de Tracción</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración/Reps</th></tr></thead><tbody><tr><td>Movilidad Articular (completa, con énfasis en cintura escapular, columna torácica, codos, muñecas)</td><td>10-12 min</td></tr><tr><td>Activación Escapular (colgado activo, retracciones en barra, band pull-aparts y face pulls)</td><td>2 series x 8-10 reps</td></tr><tr><td>Aguante en barra (Dead Hang con agarre activo)</td><td>2 series x 20-30s</td></tr><tr><td>Algunas repeticiones ligeras de los ejercicios a testear (ej. 1-2 remos fáciles, 1 negativa corta)</td><td>Según necesidad</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Calentamiento exhaustivo para la sesión final de testeo de tracción.</p></div>
+                        <a href="#VIDEO_YOUTUBE_CALENTAMIENTO_TEST_TRACCION_M3S4" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Calentamiento Test M3S4</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-trophy mr-3"></i>II. Bloque Principal: Test Final de Tracción y Core</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-people-carry"></i>1. Test: Máximas Dominadas (o Progresión Actual)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>1-2</td><td>Máx. reps (AMRAP) con técnica perfecta</td><td>3-5 min</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Busca tu máximo número de dominadas completas. Si aún estás en progresiones, testea tu máximo en negativas muy lentas o dominadas asistidas con la menor ayuda.</p></div>
+                        <a href="#VIDEO_YOUTUBE_TEST_FINAL_DOMINADAS_M3S4" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica Test M3S4</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-level-down-alt"></i>2. Test: Máximas Reps Remos Australianos (Variante más avanzada)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>1-2</td><td>Máx. reps (AMRAP) con buena forma</td><td>3 min</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Elige tu variante más desafiante de remos (cuerpo horizontal, pies elevados, un brazo asistido, con lastre) y busca tu máximo de repeticiones.</p></div>
+                        <a href="#VIDEO_YOUTUBE_TEST_FINAL_REMOS_M3S4" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica Test M3S4</a>
+                    </div>
+                     <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-ankh"></i>3. Test: Máximo Sostén Dragon Flag (o Progresión Actual)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Tiempo / Reps</th><th>Descanso</th></tr></thead><tbody><tr><td>1-2</td><td>Máx. Hold / Máx. Reps Negativas</td><td>3 min</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Intenta tu máximo sostenido en la Dragon Flag (completa o tuck) o tu máximo de negativas controladas.</p></div>
+                        <a href="#VIDEO_YOUTUBE_TEST_FINAL_DRAGON_FLAG_M3S4" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica Test M3S4</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-spa mr-2"></i>III. Enfriamiento y Celebración Final</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-glass-cheers"></i>Estiramientos Completos y Reflexión del Programa</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración</th></tr></thead><tbody><tr><td>Estiramientos de Dorsales, Bíceps, Espalda, Pecho, Hombros, Abdominales</td><td>10-15 min total</td></tr><tr><td>Respiración y Relajación Profunda</td><td>5-10 min</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Un enfriamiento completo. Dedica tiempo a estirar bien todos los músculos trabajados y a reflexionar sobre todo el camino recorrido en estos 3 meses. ¡Has completado el programa!</p></div>
+                         <a href="#VIDEO_YOUTUBE_ENFRIAMIENTO_FINAL_DIA2_M3S4" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Rutina Enfriamiento M3S4</a>
+                    </div>
+                </div>
+                <div class="info-box-dia tip mt-6"><h4><i class="fas fa-lightbulb mr-2"></i>Reflexión Día 2 (Mes 3, Semana 4):</h4><p>¡Test de tracción superado! Anota tus marcas. Has trabajado increíblemente duro. Este es el resultado de tu constancia y dedicación.</p></div>
+            </div>
+        </section> 
+
+        <section id="dia3-m3s4" class="dia-card-askesis-style">
+            <div class="dia-header-askesis-style"><i class="fas fa-couch mr-3"></i>Día 3: Descanso Total o Movilidad Muy Ligera</div>
+            <div class="dia-content-askesis-style">
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-battery-full mr-2"></i>Recuperación y Próximos Pasos con Askesis</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-walking"></i>Descanso Activo Opcional</p>
+                        <table class="tabla-parametros"><thead><tr><th>Actividad</th><th>Duración</th></tr></thead><tbody><tr><td>Descanso completo</td><td>Todo el día</td></tr><tr><td>Opcional: Caminata ligera, movilidad articular muy suave, estiramientos relajantes</td><td>20-30 min</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Este día es para el descanso y la recuperación. Si te sientes con energía, una caminata muy suave o una sesión de movilidad ligera pueden ayudar, pero prioriza el descanso.</p></div>
+                        <a href="#VIDEO_YOUTUBE_MOVILIDAD_SUAVE_M3S4" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Movilidad Suave M3S4</a>
+                    </div>
+                </div>
+                 <div class="info-box-semana tip mt-6">
+                    <h4><i class="fas fa-graduation-cap mr-2"></i>¡Felicidades, Campeón/a! Has Completado el Programa de Iniciación Askesis!</h4>
+                    <p><strong>¡LO HAS LOGRADO!</strong> Has demostrado una increíble dedicación, disciplina y fuerza al completar estas 12 semanas. Has sentado las bases, has superado desafíos y ahora tu cuerpo es más fuerte y capaz que nunca. En Askesis, estamos increíblemente orgullosos de tu progreso.</p>
+                    <p class="mt-4">Pero, ¿sabes qué es lo mejor? <strong>¡Esto es solo el comienzo de tu transformación!</strong> Has desbloqueado un nuevo nivel de potencial, y ahora es el momento perfecto para llevar tus habilidades calisténicas aún más lejos con nosotros.</p>
+                    
+                    <h5 class="font-roboto text-askesis-celebration-orange text-xl font-bold mt-6 mb-3">¿Listo/a para tu Siguiente Gran Desafío con Askesis?</h5>
+                    <p>No dejes que este impulso se detenga. Basado en tu increíble progreso, tenemos programas diseñados específicamente para llevarte al siguiente nivel:</p>
+                    <ul class="list-disc pl-5 space-y-2 mb-4">
+                        <li><strong>Programa Intermedio de Calistenia Askesis:</strong> Si estás listo para dominar movimientos como el muscle-up, front lever tuck, plancha tuck y aumentar significativamente tu fuerza y control, este es tu camino. Profundizaremos en técnicas avanzadas y progresiones más complejas.</li>
+                        <li><strong>Especialización en Habilidades Askesis:</strong> ¿Te enamoraste de las dominadas y quieres hacerlas a una mano? ¿O sueñas con un L-Sit a Straddle o Full Planche? Te ofrecemos planes personalizados para enfocarte intensamente en esas habilidades que más te motivan.</li>
+                        <li><strong>Programa de Fuerza y Acondicionamiento Calisténico Avanzado:</strong> Si tu objetivo es llevar tu fuerza funcional y resistencia a niveles de élite, este programa combina lo mejor de la calistenia con principios de acondicionamiento avanzado.</li>
+                    </ul>
+                    <p><strong>No dejes que tu viaje termine aquí.</strong> Has invertido tiempo y esfuerzo, y en Askesis estamos listos para guiarte en cada paso de tu continua evolución. Juntos, podemos alcanzar metas que hoy te parecen lejanas.</p>
+                    
+                    <div class="text-center mt-8 mb-4">
+                        <a href="https://wa.me/56975401150?text=Hola%20Askesis%2C%20he%20completado%20el%20Programa%20de%20Iniciaci%C3%B3n%20y%20estoy%20listo/a%20para%20mi%20siguiente%20nivel.%20%C2%BFCu%C3%A1l%20es%20el%20siguiente%20paso%3F" target="_blank" class="cta-button-askesis">
+                            <i class="fas fa-rocket"></i> ¡Quiero mi Siguiente Programa Askesis!
+                        </a>
+                    </div>
+                    <p class="text-sm text-center">Contáctanos hoy mismo para una consulta gratuita y diseñaremos juntos tu próximo plan de entrenamiento personalizado. <strong>¡Tu aventura con Askesis continúa!</strong></p>
+                </div>
+            </div>
+        </section> 
+        
+        <div class="info-box-semana ciencia mt-10" style="background-color: var(--askesis-accent-celebration-orange-light); border-left-color: var(--askesis-celebration-orange);">
+            <h4 style="color: var(--askesis-celebration-orange);"><i class="fas fa-star"></i> La Ciencia Detrás de la Semana Final: Evaluación del Rendimiento y Transición</h4>
+            <p>La última semana de un programa bien estructurado a menudo incluye una fase de <strong>testeo o evaluación del rendimiento</strong>. Esto no solo sirve como una medida concreta del progreso, sino que también puede proporcionar un impulso psicológico al ver los resultados del esfuerzo sostenido. Fisiológicamente, después de un ciclo de entrenamiento intenso, una breve fase de testeo seguida de una <strong>descarga o recuperación activa</strong> permite al cuerpo recuperarse completamente y manifestar las adaptaciones logradas (supercompensación). Esta semana marca una <strong>transición</strong>: se cierra un ciclo de aprendizaje y adaptación, y se abren las puertas a nuevos objetivos y desafíos, idealmente continuando con una guía experta para asegurar un progreso continuo y seguro.</p>
+        </div>
+    </div> 
+
+    <footer class="mt-12"> 
+        <div class="container mx-auto"> 
+            <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html" class="footer-logo">Askesis</a>
+            <p class="footer-tagline">Ciencia Aplicada al Movimiento.</p>
+            <p class="copyright-footer">© <span id="currentYearFooter"></span> Askesis. Todos los derechos reservados. <br> <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html" class="hover:text-askesis-orange">Volver a la página principal</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearSpan = document.getElementById('currentYearFooter');
+            if(yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+            const header = document.querySelector('.main-header');
+            const body = document.body;
+            let headerHeight = 0;
+            
+            function updateHeaderHeightAndPadding() {
+                if (header) {
+                    headerHeight = header.offsetHeight;
+                    body.style.paddingTop = `${headerHeight}px`;
+                }
+            }
+            
+            updateHeaderHeightAndPadding(); 
+            window.addEventListener('resize', updateHeaderHeightAndPadding); 
+
+             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href.startsWith('#') && href.length > 1 && document.querySelector(href) && !this.classList.contains('btn-youtube')) { 
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                            e.preventDefault();
+                            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                            const offsetPosition = elementPosition - headerHeight; 
+                            
+                            window.scrollTo({
+                                 top: offsetPosition,
+                                 behavior: "smooth"
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
