@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Askesis Calistenia - Mes 3, Semana 2: Refinando Habilidades</title>
+    <meta name="description" content="Detalle completo de la Semana 2 del Mes 3 del Programa de Iniciación a la Calistenia de Askesis. Refinamiento de habilidades y aumento de volumen/intensidad.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'askesis-blue': '#005A9C', // Original blue
+                        'askesis-sky-blue': '#38bdf8', // New color for Mes 3, Semana 2
+                        'askesis-green': '#008037',
+                        'askesis-lime-green': '#84cc16',
+                        'askesis-orange': '#F58220',
+                        'askesis-calisthenics-orange': '#f39c12',
+                        'askesis-deep-purple': '#5e35b1',
+                        'askesis-red': '#e74c3c',
+                        'askesis-teal': '#14b8a6',
+                        'askesis-amber': '#f59e0b',
+                        'askesis-dark': '#1a202c',
+                        'askesis-gray': '#2d3748',
+                        'askesis-light-gray': '#edf2f7',
+                        'askesis-text-dark': '#343a40',
+                        'askesis-text-body': '#4A5568',
+                        'askesis-bg-light': '#f8f9fa',
+                        'askesis-accent-sky-blue-light': '#e0f2fe', // Accent for sky-blue
+                    },
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --askesis-calisthenics-orange: #f39c12;
+            --askesis-sky-blue: #38bdf8; /* Main color for this week */
+            --askesis-dark: #1a202c;
+            --askesis-text-body: #4A5568;
+            --askesis-bg-white: #ffffff;
+            --askesis-accent-sky-blue-light: #e0f2fe; /* Accent for this week */
+            --askesis-light-gray-bg: #f8f9fa;
+            --askesis-card-bg: #ffffff;
+            --askesis-border-color: #e5e7eb;
+            --askesis-blue-icon: #005A9C; 
+            --askesis-green-checkmark: #008037;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Montserrat', 'sans-serif';
+            color: var(--askesis-text-body);
+            background-color: var(--askesis-light-gray-bg);
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding-top: 70px; /* Fixed header adjustment */
+        }
+        
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--askesis-dark);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            padding: 0.75rem 0;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .header-logo a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .header-nav a {
+            color: white;
+            margin-left: 1.2rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            padding: 0.5rem 0.8rem;
+            border-radius: 0.25rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .header-nav a:not(.nav-cta-button-header):hover {
+            background-color: var(--askesis-calisthenics-orange);
+            color: var(--askesis-dark);
+        }
+        .nav-cta-button-header {
+            background-color: var(--askesis-orange);
+            color: white !important;
+            padding: 0.6rem 1.2rem !important;
+            border-radius: 0.375rem;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .nav-cta-button-header:hover {
+            background-color: #d97019;
+            transform: scale(1.05);
+        }
+        
+        .hero-semana {
+            background: linear-gradient(rgba(56, 189, 248, 0.7), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/OmniaInBonum/WEB-Akesis/main/jimeng-2025-05-17-594-Ultra-realistic%20photo%20of%20a%20shirtless%20athletic%20man%20doing%20strict%20pull-ups%20on%20a%20m....jpeg') no-repeat center center;
+            background-size: cover;
+            padding: 5rem 1.5rem;
+            color: white;
+            text-align: center;
+        }
+        .hero-semana h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5em;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 4px solid var(--askesis-calisthenics-orange); 
+            text-transform: uppercase;
+            display: inline-block;
+        }
+        .hero-semana p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 1rem auto 0 auto;
+            line-height: 1.8;
+            color: var(--askesis-light-gray);
+        }
+        .hero-semana p strong { color: var(--askesis-calisthenics-orange); font-weight: bold;}
+
+        .container-main { 
+            max-width: 1024px; 
+            margin: 2.5rem auto; 
+            padding: 2.5rem; 
+            background-color: var(--askesis-bg-white); 
+            border-radius: 12px; 
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.09); 
+        }
+        
+        .intro-box-semana {
+            background-color: var(--askesis-accent-sky-blue-light); 
+            border-left: 5px solid var(--askesis-sky-blue);
+            padding: 1.8rem 2.2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .intro-box-semana h3 {
+            font-family: 'Roboto', sans-serif;
+            color: var(--askesis-sky-blue);
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .intro-box-semana p, .intro-box-semana ul li {
+            font-size: 1em;
+            margin-bottom: 0.6rem;
+        }
+        .intro-box-semana ul { list-style: disc; padding-left: 1.5rem; margin-top: 0.5rem;} 
+        .intro-box-semana strong { color: var(--askesis-dark); font-weight: bold; }
+
+        .dia-card-askesis-style {
+            background-color: var(--askesis-card-bg);
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            margin-bottom: 3.5rem;
+            overflow: hidden;
+            border: 1px solid var(--askesis-border-color);
+        }
+        .dia-card-askesis-style .dia-header-askesis-style {
+            background-color: var(--askesis-sky-blue); 
+            color: white; 
+            padding: 1.3rem 2rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6em;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid var(--askesis-calisthenics-orange);
+        }
+        .dia-card-askesis-style .dia-header-askesis-style i { margin-right: 1rem;}
+        .dia-card-askesis-style .dia-content-askesis-style { 
+            padding: 2rem; 
+        }
+        
+        .bloque-entrenamiento-askesis-style { 
+             margin-bottom: 3rem; 
+             padding: 1.5rem;
+             border-radius: 8px;
+             background-color: var(--askesis-light-gray-bg); 
+             border: 1px solid #dde4ed; 
+        }
+         .bloque-entrenamiento-askesis-style:last-child { margin-bottom: 0;}
+
+        .bloque-entrenamiento-askesis-style h4 { 
+            font-family: 'Roboto', sans-serif;
+            color: var(--askesis-calisthenics-orange);
+            font-size: 1.35em;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--askesis-calisthenics-orange);
+            display: flex;
+            align-items: center;
+        }
+         .bloque-entrenamiento-askesis-style h4 i { margin-right: 0.75rem; font-size: 0.95em; }
+
+        .ejercicio-detalle { 
+            margin-bottom: 2.5rem; 
+            padding-bottom: 2rem; 
+            border-bottom: 1px dashed var(--askesis-border-color);
+        }
+        .ejercicio-detalle:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+        .ejercicio-detalle .nombre-ejercicio {
+            font-family: 'Roboto', sans-serif;
+            color: var(--askesis-dark);
+            font-size: 1.25em;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .ejercicio-detalle .nombre-ejercicio i {
+            color: var(--askesis-sky-blue); 
+            margin-right: 0.75rem;
+            font-size: 1em;
+        }
+
+        table.tabla-parametros {
+            width: 100%;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            border-collapse: collapse;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            border-radius: 8px;
+            overflow:hidden;
+        }
+        table.tabla-parametros th, table.tabla-parametros td {
+            border: 1px solid var(--askesis-border-color);
+            padding: 0.9rem 1rem;
+            text-align: center;
+        }
+        table.tabla-parametros th {
+            background-color: var(--askesis-accent-sky-blue-light); 
+            color: var(--askesis-sky-blue);
+            font-weight: 700;
+            font-size: 1em;
+        }
+        table.tabla-parametros td {
+            background-color: var(--askesis-bg-white);
+        }
+        
+        .descripcion-ejercicio, .tecnica-ejercicio, .musculos-ejercicio {
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        .descripcion-ejercicio h5, .tecnica-ejercicio h5, .musculos-ejercicio h5 {
+            font-family: 'Roboto', sans-serif; 
+            color: var(--askesis-blue-icon); 
+            font-size: 1.15em;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+        }
+         .descripcion-ejercicio h5 i, .tecnica-ejercicio h5 i, .musculos-ejercicio h5 i {
+            margin-right: 0.6rem;
+            font-size: 0.95em;
+         }
+
+        .tecnica-ejercicio ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0.75rem;
+        }
+        .tecnica-ejercicio ul li {
+            position: relative;
+            padding-left: 2em;
+            margin-bottom: 0.6rem;
+            line-height: 1.7;
+        }
+        .tecnica-ejercicio ul li::before {
+            content: '\f058'; 
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 6px;
+            color: var(--askesis-green-checkmark);
+            font-size: 1.1em;
+        }
+        .btn-youtube {
+            display: inline-flex;
+            align-items: center;
+            background-color: #FF0000;
+            color: white !important;
+            padding: 0.7rem 1.3rem !important;
+            border-radius: 0.375rem;
+            text-decoration: none !important;
+            font-weight: 700;
+            font-size: 0.95em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 1.2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .btn-youtube:hover {
+            background-color: #CC0000;
+            color: white !important;
+            transform: translateY(-2px);
+        }
+        .btn-youtube i { margin-right: 0.75rem; }
+        
+        .info-box-dia {
+            padding: 1.5rem 2rem;
+            border-radius: 10px;
+            margin-top: 2.5rem;
+            font-size: 0.95rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+            background-color: var(--askesis-accent-orange-light);
+            border-left: 6px solid var(--askesis-calisthenics-orange);
+        }
+         .info-box-dia h4{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            color: var(--askesis-calisthenics-orange);
+        }
+         .info-box-dia h4 i { margin-right: 0.75rem; }
+
+        footer {
+            background-color: var(--askesis-dark);
+            color: #a0aec0;
+            padding: 4rem 1rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        footer .footer-logo {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        footer .footer-tagline { font-size: 0.9rem; color: #718096; margin-bottom: 2rem;}
+        footer .copyright-footer { font-size: 0.875rem; color: #718096; margin-top: 2rem; border-top: 1px solid #4A5568; padding-top: 1.5rem;}
+        footer .footer-links a { color: #a0aec0; margin: 0 0.75rem; transition: color 0.3s; font-weight: 500;}
+        footer .footer-links a:hover { color: var(--askesis-orange); }
+
+
+        @media (max-width: 768px) {
+            body { padding-top: 60px; }
+            .header-content { padding: 0.5rem 1rem;}
+            .header-logo a { font-size: 1.6em;}
+            .header-nav a { font-size: 0.8rem; margin-left: 0.8rem; padding: 0.4rem 0.6rem;}
+            .container-main { padding: 1.5rem; margin: 2rem auto;}
+            .hero-semana h1 { font-size: 2.2em; }
+            .hero-semana p { font-size: 1.1em; }
+            .dia-card-askesis-style .dia-header-askesis-style { font-size: 1.4em; padding: 1.1rem 1.5rem;}
+            .bloque-entrenamiento-askesis-style h4 { font-size: 1.25em; }
+            .ejercicio-detalle .nombre-ejercicio { font-size: 1.15em; }
+            table.tabla-parametros { font-size: 0.9rem;}
+            table.tabla-parametros th, table.tabla-parametros td { padding: 0.7rem;}
+        }
+        @media (max-width: 480px) {
+             body { padding-top: 55px; }
+             .header-logo a { font-size: 1.4em;}
+             .header-nav a { font-size: 0.75rem; margin-left: 0.5rem; padding: 0.3rem 0.5rem;}
+             .nav-cta-button-header {padding: 0.4rem 0.8rem; font-size:0.75rem;}
+             .hero-semana h1 { font-size: 2em; }
+             .hero-semana p { font-size: 1em; }
+             .dia-card-askesis-style .dia-header-askesis-style { font-size: 1.3em; }
+             .bloque-entrenamiento-askesis-style h4 { font-size: 1.2em; }
+             .ejercicio-detalle .nombre-ejercicio { font-size: 1.1em; }
+             .btn-youtube { padding: 0.6rem 1.1rem !important; font-size: 0.9em;}
+        }
+
+    </style>
+</head>
+
+<body class="bg-askesis-bg-light">
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-logo">
+                <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html">Askesis</a>
+            </div>
+            <nav class="header-nav">
+                <a href="https://omniainbonum.github.io/WEB-Akesis/WEB%20Calistenia%203%20meses%20iniciante.html">Plan General Calistenia</a>
+                <a href="https://wa.me/56975401150?text=Hola%20Askesis%2C%20tengo%20una%20duda%20sobre%20el%20Mes%203%2C%20Semana%202%20del%20Plan%20de%20Calistenia." target="_blank" class="nav-cta-button-header">
+                    <i class="fab fa-whatsapp"></i> Consultar Dudas
+                </a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="hero-semana" id="hero-mes3-semana2-calistenia">
+        <div class="content-wrapper">
+            <h1>Mes 3 - Semana 2: Refinando Habilidades</h1>
+            <p>Seguimos en el Mes 3, enfocados en <strong>refinar la técnica</strong> de los movimientos más complejos y <strong>aumentar el volumen o la intensidad</strong> de forma controlada. ¡Cada vez más cerca de tus objetivos de maestría!</p>
+        </div>
+    </div>
+
+    <div class="container-main">
+        <div class="intro-box-semana general">
+            <h3><i class="fas fa-tools"></i> Objetivos Clave de Mes 3, Semana 2:</h3>
+            <ul>
+                <li>Mejorar la calidad de las <strong>dominadas</strong> (o seguir aumentando repeticiones/duración en progresiones).</li>
+                <li>Aumentar el número de <strong>flexiones declinadas</strong> o la dificultad de las flexiones en suelo (ej. con pausa abajo).</li>
+                <li>Lograr mayor tiempo de sostén en <strong>L-Sit con una pierna extendida</strong> o intentar breves momentos con ambas piernas extendidas (si la fuerza lo permite).</li>
+                <li>Aumentar la calidad y cantidad en <strong>negativas de fondos en paralelas</strong> o fondos en banco avanzados.</li>
+                <li>Prestar especial atención a la conexión mente-músculo y la ejecución perfecta.</li>
+            </ul>
+            <p class="mt-3"><strong>Recordatorio Importante:</strong> La calidad siempre prevalece sobre la cantidad. Si un ejercicio se siente demasiado pesado con buena forma, es mejor hacer menos repeticiones perfectas que muchas con mala técnica.</p>
+        </div>
+
+        <section id="dia1-m3s2" class="dia-card-askesis-style">
+            <div class="dia-header-askesis-style"><i class="fas fa-user-cog mr-3"></i>Día 1: Empuje y L-Sit (Refinamiento)</div>
+            <div class="dia-content-askesis-style">
+                
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-fire-alt mr-3"></i>I. Preparación Neuromuscular y Articular</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-running"></i>Movilidad y Activación Específica</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración/Reps</th></tr></thead><tbody><tr><td>Movilidad Articular Dinámica (completa, con énfasis en hombros y muñecas)</td><td>8-10 min</td></tr><tr><td>Activación Escapular (variaciones en plancha y pseudo plancha)</td><td>2 series x 12-15 reps</td></tr><tr><td>Plancha sobre manos con elevación de brazo/pierna opuesta (lento y controlado)</td><td>2 series x 6-8 reps/lado</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Calentamiento para preparar el cuerpo para el trabajo de empuje y L-Sit, enfocándose en la estabilidad.</p></div>
+                        <a href="#VIDEO_YOUTUBE_CALENTAMIENTO_DIA1_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Calentamiento M3S2</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-weight-hanging mr-3"></i>II. Bloque Principal: Empuje y L-Sit</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-level-up-alt"></i>1. Flexiones Declinadas (o Flexiones en Suelo con Pausa)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>4</td><td>8-15 (Declinadas) / 10-18 (Suelo con pausa)</td><td>90-120s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Continúa con flexiones declinadas buscando más repeticiones. Si haces flexiones en suelo, añade una pausa de 1-2 segundos abajo.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave:</h5><ul><li>Cuerpo recto. Core activo. Rango completo.</li><li>Si es con pausa: mantener tensión abajo sin relajar.</li></ul></div>
+                        <a href="#VIDEO_YOUTUBE_FLEXIONES_PROG_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica M3S2</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-bars"></i>2. Negativas de Fondos en Paralelas (o Fondos en Banco con Lastre Ligero)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>4</td><td>5-8 (Negativas Paralelas, 4-6s) / 10-15 (Fondos Banco)</td><td>100-120s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Aumenta la duración de las negativas en paralelas. Si haces fondos en banco y son fáciles, considera añadir un pequeño lastre seguro.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave (Negativas Paralelas):</h5><ul><li>Descenso muy lento y controlado. Hombros estables.</li></ul></div>
+                        <a href="#VIDEO_YOUTUBE_NEGATIVAS_FONDOS_PROG_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica M3S2</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-signature"></i>3. L-Sit con Una Pierna Extendida (o Tuck L-Sit Hold más largo)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Tiempo / Reps</th><th>Descanso</th></tr></thead><tbody><tr><td>4</td><td>5-8 reps por pierna (Una Pierna Ext.) / 20-40s (Tuck)</td><td>90s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Intenta más repeticiones o mayor tiempo con una pierna extendida. Si aún estás en Tuck L-Sit, busca sostenerlo por más tiempo con forma perfecta.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave:</h5><ul><li>Hombros deprimidos. Fuerte compresión abdominal. Cadera alta.</li></ul></div>
+                         <a href="#VIDEO_YOUTUBE_LSIT_UNA_PIERNA_PROG_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica M3S2</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-compass"></i>4. Limpiaparabrisas en Suelo (Windshield Wipers - Nivel 1)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones (por lado)</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>8-12</td><td>75s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Tumbado boca arriba, brazos extendidos a los lados. Piernas elevadas y flexionadas a 90°. Baja las rodillas juntas hacia un lado, controlando con el core, sin que los hombros se levanten. Vuelve al centro y al otro lado.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave:</h5><ul><li>Movimiento controlado desde el core. Hombros pegados al suelo.</li><li>No dejes caer las piernas bruscamente.</li></ul></div>
+                        <a href="#VIDEO_YOUTUBE_WINDSHIELD_WIPERS_L1_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica M3S2</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-spa mr-2"></i>III. Enfriamiento y Flexibilidad</h4>
+                     <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-hands-helping"></i>Estiramientos Clave</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración</th></tr></thead><tbody><tr><td>Estiramientos de Pectoral, Deltoides, Tríceps, Abdominales, Flexores de Cadera, Oblicuos, Muñecas</td><td>10 min total</td></tr></tbody></table>
+                         <a href="#VIDEO_YOUTUBE_ENFRIAMIENTO_DIA1_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Rutina Enfriamiento M3S2</a>
+                    </div>
+                </div>
+                <div class="info-box-dia tip"><h4><i class="fas fa-lightbulb mr-2"></i>Reflexión Día 1 (Mes 3, Semana 2):</h4><p>El refinamiento técnico es clave en esta etapa. Siente cada contracción y controla cada fase del movimiento. ¡Estás construyendo una base de fuerza impresionante!</p></div>
+            </div>
+        </section> 
+
+        <section id="dia2-m3s2" class="dia-card-askesis-style">
+            <div class="dia-header-askesis-style"><i class="fas fa-user-cog mr-3"></i>Día 2: Tracción y Core (Refinamiento)</div>
+            <div class="dia-content-askesis-style">
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-fire-alt mr-2"></i>I. Preparación Neuromuscular y Articular</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-running"></i>Movilidad y Activación Específica de Tracción</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración/Reps</th></tr></thead><tbody><tr><td>Movilidad Articular (completa, con énfasis en rotaciones de hombro y extensión torácica)</td><td>8-10 min</td></tr><tr><td>Activación Escapular (variaciones en colgado, retracciones isométricas)</td><td>2-3 series x 10-15 reps</td></tr><tr><td>Band Pull-Aparts y Face Pulls (con diferentes ángulos)</td><td>2 series x 15-20 reps</td></tr><tr><td>Aguante en barra (Dead Hang con agarre activo y pasivo alternado)</td><td>2-3 series x 30-60s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Calentamiento completo para la sesión de tracción, enfocándose en la salud del hombro y la fuerza de agarre.</p></div>
+                        <a href="#VIDEO_YOUTUBE_CALENTAMIENTO_DIA2_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Calentamiento M3S2</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-mountain-sun mr-2"></i>II. Bloque Principal: Desarrollo de Tracción y Core</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-people-carry"></i>1. Dominadas (o Negativas/Asistidas de Alta Calidad)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>5-7</td><td>1-6 (Dominadas) / 4-8 (Negativas 5-8s)</td><td>120-180s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Sigue intentando dominadas completas con la mejor forma posible. Si aún no salen, enfócate en negativas muy lentas y controladas, o dominadas asistidas con la mínima ayuda necesaria para completar repeticiones de calidad.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave (Dominada):</h5><ul><li>Rango de movimiento completo. Inicio desde colgado total.</li><li>Barbilla claramente sobre la barra. Descenso controlado.</li></ul></div>
+                        <a href="#VIDEO_YOUTUBE_DOMINADAS_CALIDAD_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica M3S2</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-level-down-alt"></i>2. Remos Australianos (con Pausa en la Cima)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>4</td><td>10-15</td><td>90s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>En la variante de remos que estés utilizando, añade una pausa de 1-2 segundos en la posición más alta, apretando fuertemente las escápulas.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave:</h5><ul><li>Cuerpo recto. Retracción escapular máxima y sostenida.</li></ul></div>
+                        <a href="#VIDEO_YOUTUBE_REMOS_PAUSA_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica M3S2</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-user-friends"></i>3. Bíceps Curls con Peso Corporal (Variante Isométrica)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Tiempo / Reps</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>3-5 holds de 5-10s / 8-12 reps</td><td>75s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Realiza los curls y mantén la contracción máxima (codos flexionados) por 5-10 segundos en algunas repeticiones, o simplemente haz repeticiones dinámicas.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave:</h5><ul><li>Agarre supino. Cuerpo recto. Codos fijos.</li><li>Contracción intensa del bíceps en el isométrico.</li></ul></div>
+                        <a href="#VIDEO_YOUTUBE_BW_BICEPS_ISO_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica M3S2</a>
+                    </div>
+                     <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-ankh"></i>4. Dragon Flag Tuck (o Elevaciones de Cadera Inversas Avanzadas)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>6-12</td><td>90s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Si las negativas de Dragon Flag son muy difíciles, trabaja en la versión "tuck" (rodillas al pecho) manteniendo el cuerpo recto desde hombros a rodillas y bajando controlado. O sigue con elevaciones de cadera inversas buscando mayor altura y control.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave (Dragon Flag Tuck):</h5><ul><li>Cuerpo recto desde hombros a rodillas. Descenso lento y controlado.</li></ul></div>
+                        <a href="#VIDEO_YOUTUBE_DRAGON_FLAG_TUCK_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica M3S2</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-spa mr-2"></i>III. Enfriamiento y Flexibilidad</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-hands-helping"></i>Estiramientos Clave</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración</th></tr></thead><tbody><tr><td>Estiramientos de Dorsales, Bíceps, Espalda, Pecho, Hombros, Abdominales</td><td>10 min total</td></tr></tbody></table>
+                         <a href="#VIDEO_YOUTUBE_ENFRIAMIENTO_DIA2_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Rutina Enfriamiento M3S2</a>
+                    </div>
+                </div>
+                <div class="info-box-dia tip mt-6"><h4><i class="fas fa-lightbulb mr-2"></i>Reflexión Día 2 (Mes 3, Semana 2):</h4><p>La calidad de tus dominadas (o progresiones) es lo más importante. Sigue trabajando en la técnica y la fuerza de tracción. ¡Cada repetición te acerca a la meta!</p></div>
+            </div>
+        </section> 
+
+        <section id="dia3-m3s2" class="dia-card-askesis-style">
+            <div class="dia-header-askesis-style"><i class="fas fa-bolt mr-3"></i>Día 3: Cuerpo Completo - Resistencia y Habilidades Avanzadas</div>
+            <div class="dia-content-askesis-style">
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-fire-alt mr-2"></i>I. Preparación Neuromuscular y Articular</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-project-diagram"></i>Calentamiento Dinámico y de Habilidades</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración/Reps</th></tr></thead><tbody><tr><td>Movilidad Articular Completa (con movimientos fluidos y controlados)</td><td>8-10 min</td></tr><tr><td>Saltos al Cajón (buscando altura o suavidad) / Tuck Jumps (altura)</td><td>2 series x 8-10 reps</td></tr><tr><td>Zancadas con salto y rotación (explosivas pero controladas)</td><td>2 series x 8-10 reps/pierna</td></tr><tr><td>Activación de Core (Plank con extensiones, Hollow Body holds cortos)</td><td>2 series x 20-30s / 6-8 reps</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Calentamiento para preparar el cuerpo para un trabajo de cuerpo completo, incluyendo potencia y práctica de habilidades.</p></div>
+                        <a href="#VIDEO_YOUTUBE_CALENTAMIENTO_DIA3_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Calentamiento M3S2</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-shoe-prints mr-2"></i>II. Bloque Principal: Piernas, Soportes y Core</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-running"></i>1. Sentadillas con Salto (con Rodillas al Pecho - Tuck Jumps)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>4</td><td>8-12</td><td>90s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Realiza un salto vertical llevando las rodillas hacia el pecho en el aire. Aterriza suavemente. Enfócate en la explosividad y la altura del salto.</p></div>
+                        <a href="#VIDEO_YOUTUBE_TUCK_JUMPS_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica M3S2</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-shoe-prints"></i>2. Zancadas con Salto Alternas (Alternating Lunge Jumps)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones (total)</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>12-20</td><td>90s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Desde una posición de zancada, salta y cambia la posición de las piernas en el aire, aterrizando en una zancada con la pierna opuesta adelante.</p></div>
+                        <a href="#VIDEO_YOUTUBE_LUNGE_JUMPS_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica M3S2</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-grip-lines-vertical"></i>3. Soporte en Paralelas/Sillas (con Intentos de L-Sit - piernas semi-extendidas)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Tiempo / Reps</th><th>Descanso</th></tr></thead><tbody><tr><td>4</td><td>Máx. Hold (Tuck o semi-extendido) / 3-5 reps (piernas semi-extendidas)</td><td>90-120s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Desde el soporte, intenta extender las piernas lo más que puedas manteniendo la cadera alta, aunque no lleguen a estar completamente rectas. Busca la forma de L.</p></div>
+                        <a href="#VIDEO_YOUTUBE_SUPPORT_LSIT_SEMI_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica M3S2</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-angle-double-up"></i>4. Elevaciones de Piernas Colgado (Toes to Bar - Intentos o Progresión)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>3-4</td><td>5-10 (o máx. con buena forma)</td><td>90s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Si el L-Sit colgado es fuerte, intenta llevar los pies hasta tocar la barra (Toes to Bar). Si no, sigue con elevaciones de piernas rectas lo más alto posible.</p></div>
+                        <a href="#VIDEO_YOUTUBE_TOES_TO_BAR_PROG_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica M3S2</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-spa mr-2"></i>III. Enfriamiento y Flexibilidad</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-hands-helping"></i>Estiramientos Generales Completos</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración</th></tr></thead><tbody><tr><td>Estiramientos de todos los grupos musculares principales</td><td>10-12 min total</td></tr></tbody></table>
+                         <a href="#VIDEO_YOUTUBE_ENFRIAMIENTO_DIA3_M3S2" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Rutina Enfriamiento M3S2</a>
+                    </div>
+                </div>
+                <div class="info-box-dia tip mt-6"><h4><i class="fas fa-lightbulb mr-2"></i>Reflexión Día 3 (Mes 3, Semana 2):</h4><p>Esta semana has trabajado en refinar tus habilidades. ¿Notas más control y fuerza en los movimientos? ¡Sigue así, la maestría requiere práctica constante!</p></div>
+            </div>
+        </section> 
+        
+        <div class="info-box-semana ciencia mt-10" style="background-color: var(--askesis-accent-sky-blue-light); border-left-color: var(--askesis-sky-blue);">
+            <h4 style="color: var(--askesis-sky-blue);"><i class="fas fa-cogs"></i> La Ciencia Detrás de la Semana 2 del Mes 3: Adaptación Neural y Muscular Continuada</h4>
+            <p>Al continuar con progresiones desafiantes y enfocarte en la calidad del movimiento, estás promoviendo <strong>adaptaciones neurales</strong> significativas. Esto significa que tu sistema nervioso se vuelve más eficiente en reclutar las fibras musculares correctas en el orden correcto, lo que se traduce en movimientos más fluidos y potentes. A nivel muscular, el aumento de volumen o intensidad sigue estimulando la <strong>síntesis de proteínas</strong> y el fortalecimiento de los tejidos conectivos. La introducción de ejercicios como los "Toes to Bar" o variantes más difíciles de L-Sit desafía la <strong>fuerza del core y la movilidad</strong> de formas nuevas, impulsando una adaptación más completa.</p>
+        </div>
+    </div> 
+
+    <footer class="mt-12"> 
+        <div class="container mx-auto"> 
+            <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html" class="footer-logo">Askesis</a>
+            <p class="footer-tagline">Ciencia Aplicada al Movimiento.</p>
+            <p class="copyright-footer">© <span id="currentYearFooter"></span> Askesis. Todos los derechos reservados. <br> <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html" class="hover:text-askesis-orange">Volver a la página principal</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearSpan = document.getElementById('currentYearFooter');
+            if(yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+            const header = document.querySelector('.main-header');
+            const body = document.body;
+            let headerHeight = 0;
+            
+            function updateHeaderHeightAndPadding() {
+                if (header) {
+                    headerHeight = header.offsetHeight;
+                    body.style.paddingTop = `${headerHeight}px`;
+                }
+            }
+            
+            updateHeaderHeightAndPadding(); 
+            window.addEventListener('resize', updateHeaderHeightAndPadding); 
+
+             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href.startsWith('#') && href.length > 1 && document.querySelector(href) && !this.classList.contains('btn-youtube')) { 
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                            e.preventDefault();
+                            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                            const offsetPosition = elementPosition - headerHeight; 
+                            
+                            window.scrollTo({
+                                 top: offsetPosition,
+                                 behavior: "smooth"
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
