@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Iniciación Calistenia (3 Meses) - Askesis</title>
+    <meta name="description" content="Accede a cada semana de tu Programa de Iniciación a la Calistenia de 3 Meses con Askesis. Tu viaje hacia el dominio corporal comienza aquí.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'askesis-blue': '#005A9C',
+                        'askesis-green': '#008037',
+                        'askesis-orange': '#F58220',
+                        'askesis-calisthenics-orange': '#f39c12',
+                        'askesis-deep-purple': '#5e35b1',
+                        'askesis-sky-blue': '#38bdf8',
+                        'askesis-lime-green': '#84cc16',
+                        'askesis-amber': '#f59e0b',
+                        'askesis-gold': '#ffc107',
+                        'askesis-celebration-orange': '#ff6f00',
+                        'askesis-dark': '#1a202c',
+                        'askesis-gray': '#2d3748',
+                        'askesis-light-gray': '#edf2f7',
+                        'askesis-text-dark': '#343a40',
+                        'askesis-text-body': '#4A5568',
+                        'askesis-bg-light': '#f8f9fa',
+                        'askesis-accent-orange-light': '#fef5e7',
+                    },
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --askesis-calisthenics-orange: #f39c12;
+            --askesis-blue: #005A9C;
+            --askesis-dark: #1a202c;
+            --askesis-text-body: #4A5568;
+            --askesis-bg-white: #ffffff;
+            --askesis-light-gray-bg: #f8f9fa;
+            --askesis-card-bg: #ffffff;
+            --askesis-border-color: #e5e7eb;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Montserrat', 'sans-serif';
+            color: var(--askesis-text-body);
+            background-color: var(--askesis-light-gray-bg);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding-top: 70px; /* Ajuste para header fijo */
+        }
+
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--askesis-dark);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            padding: 0.75rem 0;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .header-logo a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .header-nav a {
+            color: white;
+            margin-left: 1.2rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            padding: 0.5rem 0.8rem;
+            border-radius: 0.25rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .header-nav a:not(.nav-cta-button-header):hover {
+            background-color: var(--askesis-calisthenics-orange);
+            color: var(--askesis-dark);
+        }
+        .nav-cta-button-header { /* Botón de consulta en el header */
+            background-color: var(--askesis-orange); 
+            color: white !important;
+            padding: 0.6rem 1.2rem !important;
+            border-radius: 0.375rem;
+            font-weight: 700; 
+        }
+        .nav-cta-button-header:hover{
+            background-color: #d97019; /* Naranja más oscuro */
+        }
+
+        .hero-program {
+            background: linear-gradient(rgba(243, 156, 18, 0.75), rgba(44, 62, 80, 0.8)), url('https://raw.githubusercontent.com/OmniaInBonum/WEB-Akesis/main/jimeng-2025-05-17-594-Ultra-realistic%20photo%20of%20a%20shirtless%20athletic%20man%20doing%20strict%20pull-ups%20on%20a%20m....jpeg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 6rem 1.5rem;
+            text-align: center;
+        }
+        .hero-program .hero-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .hero-program .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--askesis-light-gray);
+            margin-bottom: 2.5rem;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .program-cta-button {
+            background-color: var(--askesis-blue);
+            color: white !important;
+            padding: 0.9rem 2.2rem;
+            border-radius: 0.375rem;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .program-cta-button:hover {
+            background-color: #004170; /* Azul más oscuro */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .page-section { padding: 4rem 1.5rem; }
+        .section-title {
+            font-family: 'Roboto', sans-serif;
+            color: var(--askesis-dark);
+            font-size: 2.2em;
+            font-weight: 900;
+            margin-bottom: 2.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 3px solid var(--askesis-calisthenics-orange);
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .month-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .week-card {
+            background-color: var(--askesis-card-bg);
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            overflow: hidden;
+            border: 1px solid var(--askesis-border-color);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .week-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+        .week-card-header {
+            padding: 1.25rem 1.5rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.3em;
+            font-weight: 700;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        /* Specific week header colors to match previous designs */
+        .week-color-1 .week-card-header { background-color: #f39c12; /* Calisthenics Orange */ }
+        .week-color-2 .week-card-header { background-color: #008037; /* Green */ }
+        .week-color-3 .week-card-header { background-color: #6f42c1; /* Purple */ }
+        .week-color-4 .week-card-header { background-color: #e74c3c; /* Red */ }
+        .week-color-5 .week-card-header { background-color: #14b8a6; /* Teal */ }
+        .week-color-6 .week-card-header { background-color: #005A9C; /* Blue */ }
+        .week-color-7 .week-card-header { background-color: #84cc16; /* Lime Green */ }
+        .week-color-8 .week-card-header { background-color: #f59e0b; /* Amber */ }
+        .week-color-9 .week-card-header { background-color: #5e35b1; /* Deep Purple */ }
+        .week-color-10 .week-card-header { background-color: #38bdf8; /* Sky Blue */ }
+        .week-color-11 .week-card-header { background-color: #ffc107; /* Gold */ }
+        .week-color-12 .week-card-header { background-color: #ff6f00; /* Celebration Orange */ }
+
+        .week-card-header i { margin-right: 0.75rem; }
+        .week-card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+        .week-card-content h3 {
+            font-family: 'Roboto', sans-serif;
+            color: var(--askesis-dark);
+            font-size: 1.15em;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+        .week-card-content p {
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+            color: var(--askesis-text-body);
+        }
+        .week-card-footer {
+            padding: 1rem 1.5rem;
+            background-color: var(--askesis-light-gray-bg);
+            border-top: 1px solid var(--askesis-border-color);
+            text-align: right;
+        }
+        .btn-view-week {
+            background-color: var(--askesis-blue);
+            color: white !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .btn-view-week:hover {
+            background-color: #004170; /* Darker blue */
+        }
+        .btn-view-week i { margin-left: 0.5rem; }
+
+        footer {
+            background-color: var(--askesis-dark);
+            color: #a0aec0;
+            padding: 3rem 1rem 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        footer .footer-logo {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 0.25rem;
+        }
+        footer .footer-tagline { font-size: 0.8rem; color: #718096; margin-bottom: 1.5rem;}
+        footer .copyright-footer { font-size: 0.8rem; color: #718096; margin-top: 1.5rem; border-top: 1px solid #4A5568; padding-top: 1rem;}
+
+        @media (max-width: 768px) {
+            .hero-program .hero-title { font-size: 2.2rem; }
+            .hero-program .hero-subtitle { font-size: 1.1rem; }
+            .section-title { font-size: 1.8em; }
+            .page-section { padding: 3rem 1rem; }
+        }
+
+    </style>
+</head>
+
+<body class="bg-askesis-bg-light">
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-logo">
+                <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html">Askesis</a>
+            </div>
+            <nav class="header-nav">
+                <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html" class="hover:text-askesis-calisthenics-orange">Planes</a>
+                <a href="https://wa.me/56975401150?text=Hola%20Askesis%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20Programa%20de%20Iniciaci%C3%B3n%20a%20la%20Calistenia." target="_blank" class="nav-cta-button-header">
+                    <i class="fab fa-whatsapp"></i> Consultar
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero-calisthenics-program" class="hero-program">
+            <div class="container mx-auto px-4">
+                <h1 class="hero-title"><span class="text-white">Programa de Iniciación en Calistenia</span><br>Tu Viaje de 3 Meses hacia el Dominio Corporal</h1>
+                <p class="hero-subtitle">
+                    Construye una fuerza impresionante, control absoluto sobre tu cuerpo y alcanza hitos como tus primeras dominadas, flexiones de calidad y un L-Sit sólido con nuestro programa progresivo y científicamente diseñado.
+                </p>
+                <a href="#mes-1" class="program-cta-button"><i class="fas fa-play-circle mr-2"></i>Comenzar el Viaje</a>
+            </div>
+        </section>
+
+        <section id="mes-1" class="page-section">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title"><i class="fas fa-layer-group mr-3"></i>Mes 1: Estableciendo las Bases</h2>
+                <div class="month-grid">
+                    <div class="week-card week-color-1">
+                        <div class="week-card-header"><i class="fas fa-flag-checkered"></i>Semana 1</div>
+                        <div class="week-card-content">
+                            <h3>Fundamentos</h3>
+                            <p>Comienza tu aventura aprendiendo la técnica correcta y acondicionando tu cuerpo.</p>
+                        </div>
+                        <div class="week-card-footer">
+                            <a href="https://github.com/OmniaInBonum/Plan-Calistenia-3-meses/blob/main/Plan%20de%20Calistenia%20-%20Mes%201%2C%20Semana%201.html" target="_blank" class="btn-view-week">Ver Semana 1 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="week-card week-color-2">
+                        <div class="week-card-header"><i class="fas fa-cogs"></i>Semana 2</div>
+                        <div class="week-card-content">
+                            <h3>Consolidando la Base</h3>
+                            <p>Afianza la técnica, aumenta ligeramente la intensidad y sigue adaptando tu cuerpo.</p>
+                        </div>
+                        <div class="week-card-footer">
+                            <a href="https://github.com/OmniaInBonum/Plan-Calistenia-3-meses/blob/main/Plan%20de%20Calistenia%20-%20Mes%201%2C%20Semana%202.HTML" target="_blank" class="btn-view-week">Ver Semana 2 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="week-card week-color-3">
+                        <div class="week-card-header"><i class="fas fa-chart-line"></i>Semana 3</div>
+                        <div class="week-card-content">
+                            <h3>Afianzando el Progreso</h3>
+                            <p>Consolida fuerza y técnica, introduciendo pequeños incrementos en la dificultad.</p>
+                        </div>
+                        <div class="week-card-footer">
+                            <a href="https://github.com/OmniaInBonum/Plan-Calistenia-3-meses/blob/main/Plan%20de%20Calistenia%20-%20Mes%201%2C%20Semana%203.HTML" target="_blank" class="btn-view-week">Ver Semana 3 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="week-card week-color-4">
+                        <div class="week-card-header"><i class="fas fa-rocket"></i>Semana 4</div>
+                        <div class="week-card-content">
+                            <h3>Desafiando Límites</h3>
+                            <p>Pon a prueba tu progreso, manteniendo calidad técnica y buscando superar marcas.</p>
+                        </div>
+                        <div class="week-card-footer">
+                            <a href="https://github.com/OmniaInBonum/Plan-Calistenia-3-meses/blob/main/Plan%20de%20Calistenia%20-%20Mes%201%2C%20Semana%204.HTML" target="_blank" class="btn-view-week">Ver Semana 4 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mes-2" class="page-section bg-askesis-bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title"><i class="fas fa-graduation-cap mr-3"></i>Mes 2: Desarrollo de Habilidades</h2>
+                <div class="month-grid">
+                    <div class="week-card week-color-5">
+                        <div class="week-card-header"><i class="fas fa-feather-alt"></i>Semana 5 (M2S1)</div>
+                        <div class="week-card-content">
+                            <h3>Nuevas Habilidades</h3>
+                            <p>Introducción a progresiones para dominadas, fondos y el L-Sit. ¡Nuevos desafíos!</p>
+                        </div>
+                        <div class="week-card-footer">
+                            <a href="https://github.com/OmniaInBonum/Plan-Calistenia-3-meses/blob/main/Plan%20de%20Calistenia%20-%20Mes%202%2C%20Semana%201.HTML" target="_blank" class="btn-view-week">Ver Semana 5 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="week-card week-color-6">
+                        <div class="week-card-header"><i class="fas fa-layer-group"></i>Semana 6 (M2S2)</div>
+                        <div class="week-card-content">
+                            <h3>Consolidando Habilidades</h3>
+                            <p>Afianza la técnica de las nuevas progresiones y aumenta el volumen/intensidad.</p>
+                        </div>
+                        <div class="week-card-footer">
+                            <a href="https://github.com/OmniaInBonum/Plan-Calistenia-3-meses/blob/main/Plan%20de%20Calistenia%20-%20Mes%202%2C%20Semana%202.HTML" target="_blank" class="btn-view-week">Ver Semana 6 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="week-card week-color-7">
+                        <div class="week-card-header"><i class="fas fa-bolt"></i>Semana 7 (M2S3)</div>
+                        <div class="week-card-content">
+                            <h3>Aumentando Intensidad</h3>
+                            <p>Incrementa la intensidad y volumen en ejercicios clave. Fortalece las bases.</p>
+                        </div>
+                        <div class="week-card-footer">
+                            <a href="https://github.com/OmniaInBonum/Plan-Calistenia-3-meses/blob/main/Plan%20de%20Calistenia%20-%20Mes%202%2C%20Semana%203.HTML" target="_blank" class="btn-view-week">Ver Semana 7 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="week-card week-color-8">
+                        <div class="week-card-header"><i class="fas fa-clipboard-check"></i>Semana 8 (M2S4)</div>
+                        <div class="week-card-content">
+                            <h3>Test y Descarga Activa</h3>
+                            <p>Evalúa tu progreso en habilidades clave y permite una recuperación óptima.</p>
+                        </div>
+                        <div class="week-card-footer">
+                            <a href="https://github.com/OmniaInBonum/Plan-Calistenia-3-meses/blob/main/Plan%20de%20Calistenia%20-%20Mes%202%2C%20Semana%204.HTML" target="_blank" class="btn-view-week">Ver Semana 8 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mes-3" class="page-section">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title"><i class="fas fa-trophy mr-3"></i>Mes 3: Hacia la Maestría y Logros</h2>
+                <div class="month-grid">
+                    <div class="week-card week-color-9">
+                        <div class="week-card-header"><i class="fas fa-user-graduate"></i>Semana 9 (M3S1)</div>
+                        <div class="week-card-content">
+                            <h3>Hacia la Maestría</h3>
+                            <p>Consolida fuerza y técnica, buscando tus primeras dominadas y un L-Sit sólido.</p>
+                        </div>
+                        <div class="week-card-footer">
+                            <a href="https://github.com/OmniaInBonum/Plan-Calistenia-3-meses/blob/main/Plan%20de%20Calistenia%20-%20Mes%203%2C%20Semana%201.HTML" target="_blank" class="btn-view-week">Ver Semana 9 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="week-card week-color-10">
+                        <div class="week-card-header"><i class="fas fa-tools"></i>Semana 10 (M3S2)</div>
+                        <div class="week-card-content">
+                            <h3>Refinando Habilidades</h3>
+                            <p>Refina la técnica de movimientos complejos y aumenta volumen/intensidad.</p>
+                        </div>
+                        <div class="week-card-footer">
+                            <a href="https://github.com/OmniaInBonum/Plan-Calistenia-3-meses/blob/main/Plan%20de%20Calistenia%20-%20Mes%203%2C%20Semana%202.HTML" target="_blank" class="btn-view-week">Ver Semana 10 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="week-card week-color-11">
+                        <div class="week-card-header"><i class="fas fa-chart-line"></i>Semana 11 (M3S3)</div>
+                        <div class="week-card-content">
+                            <h3>Máximo Rendimiento</h3>
+                            <p>Empuja tus límites de forma inteligente, buscando nuevas marcas personales.</p>
+                        </div>
+                        <div class="week-card-footer">
+                            <a href="https://github.com/OmniaInBonum/Plan-Calistenia-3-meses/blob/main/Plan%20de%20Calistenia%20-%20Mes%203%2C%20Semana%203.HTML" target="_blank" class="btn-view-week">Ver Semana 11 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="week-card week-color-12">
+                        <div class="week-card-header"><i class="fas fa-flag-checkered"></i>Semana 12 (M3S4)</div>
+                        <div class="week-card-content">
+                            <h3>¡Test Final y Celebración!</h3>
+                            <p>Pon a prueba todo tu progreso, celebra tus logros y planifica tus próximos pasos.</p>
+                        </div>
+                        <div class="week-card-footer">
+                            <a href="https://github.com/OmniaInBonum/Plan-Calistenia-3-meses/blob/main/Plan%20de%20Calistenia%20-%20Mes%203%2C%20Semana%204.HTML" target="_blank" class="btn-view-week">Ver Semana 12 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section id="contacto-programa" class="page-section bg-askesis-dark text-white">
+            <div class="container mx-auto text-center max-w-3xl px-4">
+                <h2 class="font-roboto text-3xl font-bold mb-6 text-askesis-calisthenics-orange"><i class="fas fa-comments mr-2"></i>¿Preguntas o Listo para Empezar?</h2>
+                <p class="text-xl mb-8 text-gray-300">
+                    Si tienes alguna duda sobre el programa o estás listo para transformar tu cuerpo y mente con la calistenia, ¡contáctanos! Estamos aquí para ayudarte en cada paso de tu viaje.
+                </p>
+                <a href="https://wa.me/56975401150?text=Hola%20Askesis%2C%20estoy%20interesado/a%20en%20el%20Programa%20de%20Iniciaci%C3%B3n%20a%20la%20Calistenia%20de%203%20meses." target="_blank" class="program-cta-button bg-askesis-calisthenics-orange hover:bg-orange-500">
+                    <i class="fab fa-whatsapp mr-3"></i> Hablar con un Entrenador
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container mx-auto">
+            <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html" class="footer-logo">Askesis</a>
+            <p class="footer-tagline">Ciencia Aplicada al Movimiento.</p>
+            <p class="copyright-footer">© <span id="currentYearFooter"></span> Askesis. Todos los derechos reservados. <br> <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html" class="hover:text-askesis-orange">Volver a la página principal</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearSpan = document.getElementById('currentYearFooter');
+            if(yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+            const header = document.querySelector('.main-header');
+            const body = document.body;
+            let headerHeight = 0;
+            
+            function updateHeaderHeightAndPadding() {
+                if (header) {
+                    headerHeight = header.offsetHeight;
+                    // body.style.paddingTop = `${headerHeight}px`; // Descomentar si es necesario
+                }
+            }
+            
+            updateHeaderHeightAndPadding(); 
+            window.addEventListener('resize', updateHeaderHeightAndPadding); 
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const hrefAttribute = this.getAttribute('href');
+                    if (hrefAttribute.length > 1 && document.querySelector(hrefAttribute)) { 
+                        e.preventDefault();
+                        const targetElement = document.querySelector(hrefAttribute);
+                        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = elementPosition - headerHeight; 
+                        
+                        window.scrollTo({
+                             top: offsetPosition,
+                             behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
