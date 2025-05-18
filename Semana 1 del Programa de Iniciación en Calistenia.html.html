@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Askesis Calistenia - Mes 1, Semana 1: Fundamentos</title>
+    <meta name="description" content="Detalle completo de la Semana 1 del Programa de Iniciación a la Calistenia de Askesis. Entrenamientos, técnica y consejos.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'askesis-blue': '#005A9C',
+                        'askesis-green': '#008037',
+                        'askesis-orange': '#F58220',
+                        'askesis-calisthenics-orange': '#f39c12', 
+                        'askesis-dark': '#1a202c',
+                        'askesis-gray': '#2d3748',
+                        'askesis-light-gray': '#edf2f7', 
+                        'askesis-text-dark': '#343a40',
+                        'askesis-text-body': '#4A5568', 
+                        'askesis-bg-light': '#f8f9fa', 
+                        'askesis-accent-orange-light': '#fef5e7', 
+                        'askesis-accent-blue-light': '#e6f0ff', 
+                        'askesis-accent-green-light': '#e8f8f5', 
+                    },
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --askesis-calisthenics-orange: #f39c12;
+            --askesis-blue: #005A9C;
+            --askesis-dark: #1a202c;
+            --askesis-text-body: #4A5568; 
+            --askesis-bg-white: #ffffff;
+            --askesis-accent-orange-light: #fef5e7;
+            --askesis-light-gray-bg: #f8f9fa; 
+            --askesis-card-bg: #ffffff; 
+            --askesis-green: #008037;
+            --askesis-border-color: #e5e7eb; 
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Montserrat', 'sans-serif';
+            color: var(--askesis-text-body);
+            background-color: var(--askesis-light-gray-bg); 
+            line-height: 1.75; 
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding-top: 70px; 
+        }
+        
+        /* Header Estilo Web Askesis 2 */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--askesis-dark); 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            padding: 0.75rem 0; 
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px; 
+            margin: 0 auto;
+            padding: 0 1.5rem; 
+        }
+        .header-logo a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem; 
+            font-weight: 900; 
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .header-nav a {
+            color: white;
+            margin-left: 1.2rem; 
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            padding: 0.5rem 0.8rem;
+            border-radius: 0.25rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .header-nav a:not(.nav-cta-button-header):hover { /* Evitar que el botón CTA cambie de fondo así */
+            background-color: var(--askesis-calisthenics-orange); 
+            color: var(--askesis-dark);
+        }
+        .nav-cta-button-header { /* Botón CTA en header */
+            background-color: var(--askesis-orange); /* Naranja original de Askesis */
+            color: white !important;
+            padding: 0.6rem 1.2rem !important;
+            border-radius: 0.375rem;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .nav-cta-button-header:hover {
+            background-color: #d97019; /* Naranja más oscuro */
+            transform: scale(1.05);
+        }
+        
+        .hero-semana {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://raw.githubusercontent.com/OmniaInBonum/WEB-Akesis/main/jimeng-2025-05-17-587-Ultra-realistic%20photo%20of%20a%20personal%20trainer%20looking%20a%20women%20doing%20squats%2C%20capt....jpeg') no-repeat center center;
+            background-size: cover;
+            padding: 5rem 1.5rem; 
+            color: white;
+            text-align: center;
+        }
+        .hero-semana h1 { /* Estilo de section-title-light */
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5em; 
+            font-weight: 900;
+            margin-bottom: 1rem; 
+            padding-bottom: 1rem; 
+            border-bottom: 4px solid var(--askesis-orange);
+            text-transform: uppercase;
+            display: inline-block; /* Para que el borde se ajuste al texto */
+        }
+        .hero-semana p { /* Estilo de hero-subtitle */
+            font-size: 1.2em; 
+            max-width: 700px;
+            margin: 1rem auto 0 auto;
+            line-height: 1.8;
+            color: var(--askesis-light-gray);
+        }
+        .hero-semana p strong { color: var(--askesis-calisthenics-orange); font-weight: bold;}
+
+
+        .container-main { 
+            max-width: 1024px; 
+            margin: 2.5rem auto; 
+            padding: 2.5rem; 
+            background-color: var(--askesis-bg-white); 
+            border-radius: 12px; 
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.09); 
+        }
+        
+        .intro-box-semana { /* Caja de introducción a la semana */
+            background-color: var(--askesis-accent-orange-light);
+            border-left: 5px solid var(--askesis-calisthenics-orange);
+            padding: 1.8rem 2.2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .intro-box-semana h3 {
+            font-family: 'Roboto', sans-serif;
+            color: var(--askesis-calisthenics-orange);
+            font-size: 1.5em; 
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .intro-box-semana p, .intro-box-semana ul li {
+            font-size: 1em; 
+            margin-bottom: 0.6rem;
+        }
+        .intro-box-semana ul { list-style: disc; padding-left: 1.5rem; margin-top: 0.5rem;} 
+        .intro-box-semana strong { color: var(--askesis-dark); font-weight: bold; }
+
+
+        .dia-card-askesis-style { /* Estilo tarjeta para cada DÍA, inspirado en card-item */
+            background-color: var(--askesis-card-bg);
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            margin-bottom: 3.5rem; 
+            overflow: hidden;
+            border: 1px solid var(--askesis-border-color);
+        }
+        .dia-card-askesis-style .dia-header-askesis-style { /* Header del día */
+            background-color: var(--askesis-blue); 
+            color: white;
+            padding: 1.3rem 2rem; 
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6em; 
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid var(--askesis-calisthenics-orange);
+        }
+        .dia-card-askesis-style .dia-header-askesis-style i { margin-right: 1rem;}
+        .dia-card-askesis-style .dia-content-askesis-style { 
+            padding: 2rem; 
+        }
+        
+        .bloque-entrenamiento-askesis-style { 
+             margin-bottom: 3rem; 
+             padding: 1.5rem; /* Menos padding para que no se vea tan espaciado dentro de la tarjeta */
+             border-radius: 8px;
+             background-color: var(--askesis-light-gray-bg); 
+             border: 1px solid #dde4ed; 
+        }
+         .bloque-entrenamiento-askesis-style:last-child { margin-bottom: 0;}
+
+        .bloque-entrenamiento-askesis-style h4 { 
+            font-family: 'Roboto', sans-serif;
+            color: var(--askesis-calisthenics-orange);
+            font-size: 1.35em; 
+            font-weight: 700;
+            margin-bottom: 1.5rem; 
+            padding-bottom: 0.75rem; 
+            border-bottom: 2px solid var(--askesis-calisthenics-orange);
+            display: flex;
+            align-items: center;
+        }
+         .bloque-entrenamiento-askesis-style h4 i { margin-right: 0.75rem; font-size: 0.95em; }
+
+        .ejercicio-detalle { 
+            margin-bottom: 2.5rem; 
+            padding-bottom: 2rem; 
+            border-bottom: 1px dashed var(--askesis-border-color);
+        }
+        .ejercicio-detalle:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+        .ejercicio-detalle .nombre-ejercicio {
+            font-family: 'Roboto', sans-serif;
+            color: var(--askesis-dark);
+            font-size: 1.25em; 
+            font-weight: 700;
+            margin-bottom: 1rem; 
+            display: flex;
+            align-items: center;
+        }
+        .ejercicio-detalle .nombre-ejercicio i {
+            color: var(--askesis-blue);
+            margin-right: 0.75rem;
+            font-size: 1em; 
+        }
+
+        table.tabla-parametros {
+            width: 100%;
+            margin-bottom: 1.5rem; 
+            font-size: 0.95rem; 
+            border-collapse: collapse;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            border-radius: 8px;
+            overflow:hidden;
+        }
+        table.tabla-parametros th, table.tabla-parametros td {
+            border: 1px solid var(--askesis-border-color);
+            padding: 0.9rem 1rem; 
+            text-align: center;
+        }
+        table.tabla-parametros th {
+            background-color: var(--askesis-accent-orange-light);
+            color: var(--askesis-calisthenics-orange);
+            font-weight: 700;
+            font-size: 1em;
+        }
+        table.tabla-parametros td {
+            background-color: var(--askesis-bg-white);
+        }
+        
+        .descripcion-ejercicio, .tecnica-ejercicio, .musculos-ejercicio {
+            margin-bottom: 1.5rem; 
+            font-size: 0.95rem; 
+        }
+        .descripcion-ejercicio h5, .tecnica-ejercicio h5, .musculos-ejercicio h5 {
+            font-family: 'Roboto', sans-serif; 
+            color: var(--askesis-blue);
+            font-size: 1.15em; 
+            font-weight: 700;
+            margin-bottom: 0.75rem; 
+            display: flex;
+            align-items: center;
+        }
+         .descripcion-ejercicio h5 i, .tecnica-ejercicio h5 i, .musculos-ejercicio h5 i {
+            margin-right: 0.6rem;
+            font-size: 0.95em;
+         }
+
+        .tecnica-ejercicio ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0.75rem;
+        }
+        .tecnica-ejercicio ul li {
+            position: relative;
+            padding-left: 2em; 
+            margin-bottom: 0.6rem; 
+            line-height: 1.7; 
+        }
+        .tecnica-ejercicio ul li::before {
+            content: '\f058'; 
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 6px; 
+            color: var(--askesis-green); 
+            font-size: 1.1em; 
+        }
+        .btn-youtube { /* Botón YouTube estilo Web Askesis 2 */
+            display: inline-flex; 
+            align-items: center;
+            background-color: #FF0000; 
+            color: white !important; 
+            padding: 0.7rem 1.3rem !important; 
+            border-radius: 0.375rem; /* Como .select-plan-btn */
+            text-decoration: none !important; 
+            font-weight: 700; 
+            font-size: 0.95em; 
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 1.2rem; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra sutil */
+        }
+        .btn-youtube:hover {
+            background-color: #CC0000; 
+            color: white !important;
+            transform: translateY(-2px);
+        }
+        .btn-youtube i { margin-right: 0.75rem; }
+        
+        .info-box-dia { /* Para consejos al final de cada día */
+            padding: 1.5rem 2rem; 
+            border-radius: 10px; 
+            margin-top: 2.5rem; /* Espacio después del último bloque de ejercicio */
+            font-size: 0.95rem; 
+            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+            background-color: var(--askesis-accent-green-light); 
+            border-left: 6px solid var(--askesis-green); 
+        }
+         .info-box-dia h4{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em; 
+            font-weight: 700;
+            margin-bottom: 0.75rem; 
+            display: flex;
+            align-items: center;
+            color: var(--askesis-green);
+        }
+         .info-box-dia h4 i { margin-right: 0.75rem; }
+
+
+        footer { /* Footer estilo Web Askesis 2 */
+            background-color: var(--askesis-dark);
+            color: #a0aec0;
+            padding: 4rem 1rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        footer .footer-logo {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        footer .footer-tagline { font-size: 0.9rem; color: #718096; margin-bottom: 2rem;}
+        footer .copyright-footer { font-size: 0.875rem; color: #718096; margin-top: 2rem; border-top: 1px solid #4A5568; padding-top: 1.5rem;}
+        footer .footer-links a { color: #a0aec0; margin: 0 0.75rem; transition: color 0.3s; font-weight: 500;}
+        footer .footer-links a:hover { color: var(--askesis-orange); }
+
+
+        @media (max-width: 768px) {
+            body { padding-top: 60px; } 
+            .header-content { padding: 0.5rem 1rem;}
+            .header-logo a { font-size: 1.6em;}
+            .header-nav a { font-size: 0.8rem; margin-left: 0.8rem; padding: 0.4rem 0.6rem;}
+            .container-main { padding: 1.5rem; margin: 2rem auto;}
+            h1.page-title { font-size: 2.2em; } /* Ajustado como section-title-dark */
+            p.page-intro { font-size: 1.1em; } /* Ajustado como hero-subtitle */
+            .dia-header { font-size: 1.4em; padding: 1.1rem 1.5rem;} /* Ajustado */
+            .bloque-entrenamiento h4 { font-size: 1.25em; } /* Ajustado */
+            .ejercicio-detalle .nombre-ejercicio { font-size: 1.15em; } /* Ajustado */
+            table.tabla-parametros { font-size: 0.9rem;} /* Ajustado */
+            table.tabla-parametros th, table.tabla-parametros td { padding: 0.7rem;} /* Ajustado */
+        }
+        @media (max-width: 480px) {
+             body { padding-top: 55px; }
+             .header-logo a { font-size: 1.4em;}
+             .header-nav a { font-size: 0.75rem; margin-left: 0.5rem; padding: 0.3rem 0.5rem;}
+             .nav-cta-button-header {padding: 0.4rem 0.8rem; font-size:0.75rem;}
+             h1.page-title { font-size: 2em; }
+             p.page-intro { font-size: 1em; }
+             .dia-header { font-size: 1.3em; }
+             .bloque-entrenamiento h4 { font-size: 1.2em; }
+             .ejercicio-detalle .nombre-ejercicio { font-size: 1.1em; }
+             .btn-youtube { padding: 0.6rem 1.1rem !important; font-size: 0.9em;}
+        }
+
+    </style>
+</head>
+
+<body class="bg-askesis-bg-light">
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-logo">
+                <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html">Askesis</a>
+            </div>
+            <nav class="header-nav">
+                <a href="https://omniainbonum.github.io/WEB-Akesis/WEB%20Calistenia%203%20meses%20iniciante.html">Plan General Calistenia</a>
+                <a href="https://wa.me/56975401150?text=Hola%20Askesis%2C%20tengo%20una%20duda%20sobre%20la%20Semana%201%20del%20Plan%20de%20Calistenia." target="_blank" class="nav-cta-button-header">
+                    <i class="fab fa-whatsapp"></i> Consultar Dudas
+                </a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="hero-semana" id="hero-semana1-calistenia"> <div class="content-wrapper"> <h1>Mes 1 - Semana 1: Fundamentos</h1>
+            <p>¡Tu aventura en la calistenia comienza ahora! Esta semana nos enfocaremos en <strong>construir cimientos sólidos</strong>, aprender la <strong>técnica correcta</strong> de los movimientos y <strong>acondicionar tu cuerpo</strong>. ¡Concéntrate y disfruta cada paso!</p>
+        </div>
+    </div>
+
+    <div class="container-main">
+        <div class="info-box-semana general">
+            <h4><i class="fas fa-bullseye"></i> Objetivos Clave de la Semana 1:</h4>
+            <ul>
+                <li>Familiarizarte con los patrones de movimiento básicos de empuje, tracción y core.</li>
+                <li>Acondicionar tus articulaciones (muñecas, codos, hombros) para el trabajo con peso corporal.</li>
+                <li>Comenzar a desarrollar la conexión mente-músculo para una activación efectiva.</li>
+                <li>Establecer una rutina de entrenamiento consistente y aprender a escuchar tu cuerpo.</li>
+            </ul>
+            <p class="mt-3"><strong>Recordatorio Importante:</strong> La calidad de cada repetición es más importante que la cantidad. Concéntrate en la técnica. Si sientes dolor (diferente a la fatiga muscular), detente y ajusta o consulta.</p>
+        </div>
+
+        <section id="dia1-s1" class="dia-card-askesis-style">
+            <div class="dia-header-askesis-style"><i class="fas fa-user-ninja mr-3"></i>Día 1: Fuerza de Empuje y Núcleo Estable</div>
+            <div class="dia-content-askesis-style">
+                
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-fire-alt mr-3"></i>I. Preparación Neuromuscular y Articular (Calentamiento)</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-running"></i>Movilidad y Activación General</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración/Reps</th></tr></thead><tbody><tr><td>Movilidad Articular General (cuello, hombros, codos, muñecas, torso, cadera, rodillas, tobillos)</td><td>5-7 min</td></tr><tr><td>Activación Escapular (retracciones/protracciones, elevaciones/depresiones)</td><td>2 series x 10-12 reps</td></tr><tr><td>Gato-Camello</td><td>1 serie x 10 reps</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Prepara tus articulaciones y activa los músculos clave para la sesión de empuje. El objetivo es aumentar el flujo sanguíneo y la temperatura corporal, y mejorar el rango de movimiento.</p></div>
+                        <a href="#VIDEO_YOUTUBE_CALENTAMIENTO_DIA1_S1" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Calentamiento</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-dumbbell mr-3"></i>II. Bloque Principal: Desarrollo de Empuje y Core</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-angle-double-up"></i>1. Flexiones Inclinadas</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>8-12</td><td>60-90s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Ejercicio fundamental para construir fuerza de empuje horizontal, adaptando la dificultad con la altura de la inclinación.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica:</h5><ul><li>Manos en superficie elevada (silla, banco). Cuerpo recto (core y glúteos activos).</li><li>Codos a 45° respecto al torso al bajar. Pecho casi toca la superficie.</li><li>Empuje controlado, extendiendo codos sin bloquearlos completamente.</li></ul></div>
+                        <div class="musculos-ejercicio"><h5><i class="fas fa-male"></i>Músculos Implicados:</h5><p>Pectoral Mayor, Deltoides Anterior, Tríceps Braquial, Serrato Anterior, Core.</p></div>
+                        <a href="#VIDEO_YOUTUBE_FLEXIONES_INCLINADAS" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-mountain"></i>2. Pike Push-ups Asistidas (Pies en el suelo)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>5-8</td><td>75-90s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Introduce la carga vertical sobre los hombros, preparando para flexiones más avanzadas.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica:</h5><ul><li>Desde plancha alta, cadera elevada formando una "V" invertida.</li><li>Manos un poco más anchas que los hombros.</li><li>Bajar la coronilla hacia el suelo por delante de las manos, manteniendo cadera alta.</li><li>Empujar el suelo para volver, enfocando en el trabajo de los hombros.</li></ul></div>
+                        <div class="musculos-ejercicio"><h5><i class="fas fa-male"></i>Músculos Implicados:</h5><p>Deltoides (anterior y medial), Tríceps, Trapecio Superior, Serrato Anterior.</p></div>
+                        <a href="#VIDEO_YOUTUBE_PIKE_PUSHUPS_ASIST" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-window-minimize"></i>3. Plancha Frontal (Plank sobre Antebrazos)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Tiempo</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>20-40 segundos</td><td>60s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Ejercicio isométrico clave para la estabilidad y fuerza del core.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica:</h5><ul><li>Antebrazos en el suelo, codos bajo los hombros.</li><li>Cuerpo en línea recta de cabeza a talones.</li><li>Contracción fuerte de abdomen y glúteos. Evitar que la cadera caiga o suba.</li></ul></div>
+                        <div class="musculos-ejercicio"><h5><i class="fas fa-male"></i>Músculos Implicados:</h5><p>Recto Abdominal, Transverso Abdominal, Oblicuos, Erectores Espinales, Glúteos.</p></div>
+                         <a href="#VIDEO_YOUTUBE_PLANCHA_FRONTAL" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-sort-amount-up-alt"></i>4. Elevaciones de Piernas Tumbado (Lying Leg Raises)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>10-12</td><td>60s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Fortalece la porción inferior del recto abdominal y los flexores de cadera.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica:</h5><ul><li>Espalda baja pegada al suelo (manos bajo glúteos opcional).</li><li>Piernas rectas o con ligera flexión de rodillas.</li><li>Elevar piernas hasta 90° y bajar controladamente sin tocar el suelo.</li></ul></div>
+                        <div class="musculos-ejercicio"><h5><i class="fas fa-male"></i>Músculos Implicados:</h5><p>Recto Abdominal (inferior), Flexores de Cadera.</p></div>
+                        <a href="#VIDEO_YOUTUBE_LEG_RAISES" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-spa mr-2"></i>III. Enfriamiento y Flexibilidad</h4>
+                     <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-hands-helping"></i>Estiramientos Clave Post-Empuje</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración</th></tr></thead><tbody><tr><td>Estiramientos de Pectoral, Deltoides, Tríceps, Abdominales</td><td>5-7 min total</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Realiza estiramientos suaves y mantenidos (20-30 segundos por cada uno, respirando profundamente) para los músculos principales trabajados hoy.</p></div>
+                        <ul class="tecnica-ejercicio">
+                            <li>Estiramiento de Pectoral (en marco de puerta o pared).</li>
+                            <li>Estiramiento de Deltoides Anterior (brazo cruzado por delante del cuerpo).</li>
+                            <li>Estiramiento de Tríceps (codo por encima de la cabeza, mano hacia la espalda).</li>
+                            <li>Estiramiento de Abdominales (postura de la cobra suave o estiramiento de gato-vaca).</li>
+                        </ul>
+                         <a href="#VIDEO_YOUTUBE_ENFRIAMIENTO_DIA1_S1" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Rutina Enfriamiento</a>
+                    </div>
+                </div>
+                <div class="info-box-semana tip"><h4><i class="fas fa-lightbulb mr-2"></i>Reflexión Día 1 (Semana 1):</h4><p>¡Felicidades por completar tu primer día! Anota cómo te sentiste, qué ejercicios fueron más desafiantes y dónde sentiste más el trabajo. Esta información es valiosa para tu progreso. ¡La clave es la consistencia!</p></div>
+            </div>
+        </section> 
+
+        <section id="dia2-s1" class="dia-card-askesis-style">
+            <div class="dia-header-askesis-style"><i class="fas fa-hand-grabbing mr-3"></i>Día 2: Fuerza de Tracción y Núcleo Posterior</div>
+            <div class="dia-content-askesis-style">
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-fire-alt mr-2"></i>I. Preparación Neuromuscular y Articular</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-running"></i>Movilidad y Activación Específica de Tracción</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración/Reps</th></tr></thead><tbody><tr><td>Movilidad Articular (hombros, codos, muñecas, columna torácica)</td><td>4-5 min</td></tr><tr><td>Activación Escapular (especialmente retracción y depresión)</td><td>2 series x 10-15 reps</td></tr><tr><td>Band Pull-Aparts (si se dispone de banda)</td><td>2 series x 15-20 reps</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Prepara la cintura escapular, espalda y brazos para los movimientos de tracción. Enfócate en sentir la activación de los músculos de la espalda.</p></div>
+                        <a href="#VIDEO_YOUTUBE_CALENTAMIENTO_DIA2_S1" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Calentamiento</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-user-cog mr-2"></i>II. Bloque Principal: Desarrollo de Tracción y Core</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-level-down-alt"></i>1. Remos Australianos (Inverted Rows)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>8-12</td><td>60-90s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Ejercicio fundamental para desarrollar la fuerza de tracción horizontal, precursor de las dominadas. La dificultad se ajusta con la inclinación del cuerpo.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica:</h5><ul><li>Utiliza una barra baja, el borde de una mesa resistente, anillas o TRX. Cuanto más horizontal esté tu cuerpo, más difícil será.</li><li>Cuerpo recto desde la cabeza hasta los talones, manteniendo el core y los glúteos activados.</li><li>Tira llevando el pecho hacia la barra o el borde, enfocándote en juntar las escápulas (omóplatos) al final del movimiento.</li><li>Controla el descenso (fase excéntrica) de vuelta a la posición inicial.</li></ul></div>
+                        <div class="musculos-ejercicio"><h5><i class="fas fa-male"></i>Músculos Implicados:</h5><p>Dorsal Ancho, Romboides, Trapecio (medio e inferior), Bíceps Braquial, Deltoides Posterior, Core.</p></div>
+                        <a href="#VIDEO_YOUTUBE_REMOS_AUSTRALIANOS" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-compress-arrows-alt"></i>2. Scapular Pull-ups (Retracciones Escapulares Colgado)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>8-10</td><td>60s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Aísla y fortalece los músculos responsables del movimiento escapular, crucial para la salud del hombro y la correcta ejecución de las dominadas.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica:</h5><ul><li>Cuélgate de una barra de dominadas con los brazos completamente extendidos y los hombros relajados (pero activos, no "descolgados").</li><li>Sin doblar los codos, deprime (baja los hombros) y retrae (junta las escápulas) tus omóplatos. Sentirás que tu pecho sube ligeramente.</li><li>Mantén la contracción en la parte superior por un segundo.</li><li>Relaja controladamente para volver a la posición inicial, permitiendo que las escápulas se eleven y se separen.</li></ul></div>
+                        <div class="musculos-ejercicio"><h5><i class="fas fa-male"></i>Músculos Implicados:</h5><p>Trapecio (inferior y medio), Romboides, Serrato Anterior (en la protracción al relajar).</p></div>
+                        <a href="#VIDEO_YOUTUBE_SCAPULAR_PULLUPS" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-superpowers"></i>3. Superman Hold</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Tiempo</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>15-30 segundos</td><td>60s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Fortalece toda la cadena posterior, incluyendo la espalda baja, glúteos e isquiosurales.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica:</h5><ul><li>Acuéstate boca abajo con los brazos extendidos al frente y las piernas extendidas.</li><li>Simultáneamente, eleva los brazos, el pecho y las piernas del suelo, manteniendo el cuello alineado con la columna.</li><li>Contrae fuertemente los glúteos y los músculos de la espalda baja.</li><li>Respira de forma constante durante el aguante.</li></ul></div>
+                        <div class="musculos-ejercicio"><h5><i class="fas fa-male"></i>Músculos Implicados:</h5><p>Erectores Espinales, Glúteo Mayor, Isquiosurales, Deltoides Posterior, Trapecio.</p></div>
+                        <a href="#VIDEO_YOUTUBE_SUPERMAN_HOLD" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica</a>
+                    </div>
+                     <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-align-justify fa-rotate-90"></i>4. Plancha Lateral (Side Plank)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Tiempo (por lado)</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>15-30s</td><td>45s entre lados</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Fortalece los oblicuos y mejora la estabilidad lateral del core.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica:</h5><ul><li>Apóyate sobre un antebrazo, codo bajo el hombro.</li><li>Cuerpo en línea recta, cadera elevada y alineada.</li><li>Contrae los oblicuos del lado más cercano al suelo.</li></ul></div>
+                        <div class="musculos-ejercicio"><h5><i class="fas fa-male"></i>Músculos Implicados:</h5><p>Oblicuos, Cuadrado Lumbar, Glúteo Medio/Menor, Transverso Abdominal.</p></div>
+                        <a href="#VIDEO_YOUTUBE_PLANCHA_LATERAL" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-spa mr-2"></i>III. Enfriamiento y Flexibilidad</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-hands-helping"></i>Estiramientos Clave Post-Tracción</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración</th></tr></thead><tbody><tr><td>Estiramientos de Dorsales, Bíceps, Espalda</td><td>5-7 min total</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Estiramientos suaves y mantenidos (20-30 segundos) para los músculos de la espalda y brazos.</p></div>
+                        <ul class="tecnica-ejercicio">
+                            <li>Estiramiento de Dorsal Ancho (colgado pasivo ligero o sujetándose a un poste).</li>
+                            <li>Estiramiento de Bíceps (brazo extendido contra una pared).</li>
+                            <li>Estiramiento de Espalda (Postura del Niño).</li>
+                        </ul>
+                         <a href="#VIDEO_YOUTUBE_ENFRIAMIENTO_DIA2_S1" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Rutina Enfriamiento</a>
+                    </div>
+                </div>
+                <div class="info-box-semana tip mt-6"><h4><i class="fas fa-lightbulb mr-2"></i>Reflexión Día 2 (Semana 1):</h4><p>La conexión con los músculos de la espalda es clave en la tracción. Siente cómo tus escápulas se mueven y tus dorsales trabajan. ¡Buen trabajo!</p></div>
+            </div>
+        </section> 
+
+        <section id="dia3-s1" class="dia-card-askesis-style">
+            <div class="dia-header-askesis-style"><i class="fas fa-child mr-3"></i>Día 3: Cuerpo Completo (Énfasis Piernas y Soportes)</div>
+            <div class="dia-content-askesis-style">
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-fire-alt mr-2"></i>I. Preparación Neuromuscular y Articular</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-running"></i>Calentamiento General y Dinámico</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración/Reps</th></tr></thead><tbody><tr><td>Movilidad Articular Completa</td><td>4-5 min</td></tr><tr><td>Sentadillas sin peso</td><td>2 series x 10-15 reps</td></tr><tr><td>Zancadas dinámicas</td><td>2 series x 8-10 reps/pierna</td></tr><tr><td>Activación de Core Ligera (Bird-dog)</td><td>1 serie x 10 reps/lado</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Prepara todo el cuerpo para el trabajo, con un ligero énfasis en el tren inferior y la estabilidad del core.</p></div>
+                        <a href="#VIDEO_YOUTUBE_CALENTAMIENTO_DIA3_S1" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Calentamiento</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-shoe-prints mr-2"></i>II. Bloque Principal: Piernas, Soportes y Core</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-chair"></i>1. Sentadillas con Peso Corporal (Air Squats)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>12-20</td><td>60s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Movimiento fundamental para la fuerza y movilidad de las piernas y cadera.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica:</h5><ul><li>Pies al ancho de hombros o ligeramente más, puntas de los pies apuntando un poco hacia afuera.</li><li>Inicia el movimiento llevando la cadera hacia atrás y abajo, como si te sentaras en una silla.</li><li>Mantén el pecho erguido y la espalda recta (curvatura lumbar natural).</li><li>Baja hasta que los muslos estén paralelos al suelo o más abajo si tu movilidad lo permite sin comprometer la forma.</li><li>Rodillas siguen la dirección de los pies, sin colapsar hacia adentro. Peso distribuido en toda la planta del pie.</li></ul></div>
+                        <div class="musculos-ejercicio"><h5><i class="fas fa-male"></i>Músculos Implicados:</h5><p>Cuádriceps, Glúteos, Isquiosurales, Aductores, Erectores Espinales (como estabilizadores).</p></div>
+                        <a href="#VIDEO_YOUTUBE_AIR_SQUATS" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-walking"></i>2. Zancadas Alternas (Alternating Lunges)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones (por pierna)</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>8-12</td><td>60s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Excelente ejercicio unilateral para fuerza de piernas, equilibrio y estabilidad de cadera.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica:</h5><ul><li>Da un paso largo hacia adelante con una pierna.</li><li>Baja la cadera hasta que ambas rodillas formen ángulos de aproximadamente 90 grados. La rodilla trasera debe casi tocar el suelo.</li><li>El torso debe permanecer erguido y el core activado.</li><li>Impúlsate con la pierna delantera para volver a la posición inicial. Alterna las piernas en cada repetición.</li></ul></div>
+                        <div class="musculos-ejercicio"><h5><i class="fas fa-male"></i>Músculos Implicados:</h5><p>Cuádriceps, Glúteos, Isquiosurales, Aductores, Abductores (estabilizadores).</p></div>
+                        <a href="#VIDEO_YOUTUBE_LUNGES" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-grip-lines-vertical"></i>3. Soporte en Paralelas Bajas o Sillas (Support Hold)</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Tiempo</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>10-20 segundos</td><td>75s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Desarrolla la fuerza de soporte en hombros, pecho y tríceps, fundamental para dips y otros movimientos de calistenia.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica:</h5><ul><li>Coloca las manos en dos superficies estables (paralelas bajas, sillas resistentes, bordes de bancos).</li><li>Empuja hacia abajo para levantar tu cuerpo, extendiendo los brazos completamente (codos bloqueados suavemente).</li><li>Deprime los hombros (empújalos hacia abajo, alejándolos de las orejas) y mantén una ligera protracción escapular (separando los omóplatos).</li><li>Cuerpo recto o con las rodillas ligeramente flexionadas si es necesario para no tocar el suelo. Core activado.</li></ul></div>
+                        <div class="musculos-ejercicio"><h5><i class="fas fa-male"></i>Músculos Implicados:</h5><p>Tríceps, Deltoides Anterior, Pectoral Inferior, Trapecio Inferior, Serrato Anterior, Core.</p></div>
+                        <a href="#VIDEO_YOUTUBE_SUPPORT_HOLD" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica</a>
+                    </div>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-angle-up"></i>4. Elevaciones de Rodillas Colgado o Tuck L-sit en Suelo</p>
+                        <table class="tabla-parametros"><thead><tr><th>Series</th><th>Repeticiones</th><th>Descanso</th></tr></thead><tbody><tr><td>3</td><td>6-10</td><td>60s</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Base para el L-Sit, fortaleciendo el core y los flexores de cadera.</p></div>
+                        <div class="tecnica-ejercicio"><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica (Colgado):</h5><ul><li>Cuélgate de una barra con agarre prono o neutro, hombros activos (deprimidos).</li><li>Sin balancearte, eleva las rodillas hacia el pecho lo más alto posible, contrayendo el abdomen.</li><li>Baja de forma controlada.</li></ul><h5><i class="fas fa-check-circle"></i>Puntos Clave de Técnica (Tuck L-sit Suelo):</h5><ul><li>Siéntate en el suelo con las piernas extendidas. Coloca las manos al lado de tus caderas, dedos apuntando hacia adelante.</li><li>Empuja el suelo con fuerza, deprimiendo los hombros y extendiendo los codos.</li><li>Intenta levantar la cadera del suelo y llevar las rodillas hacia el pecho, manteniendo los pies cerca del suelo o ligeramente elevados.</li></ul></div>
+                        <div class="musculos-ejercicio"><h5><i class="fas fa-male"></i>Músculos Implicados:</h5><p>Recto Abdominal, Oblicuos, Flexores de Cadera, Serrato Anterior, Dorsal Ancho (estabilizador en colgado).</p></div>
+                        <a href="#VIDEO_YOUTUBE_KNEE_RAISES_TUCK_LSIT" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Técnica</a>
+                    </div>
+                </div>
+
+                <div class="bloque-entrenamiento-askesis-style">
+                    <h4><i class="fas fa-spa mr-2"></i>III. Enfriamiento y Flexibilidad</h4>
+                    <div class="ejercicio-detalle">
+                        <p class="nombre-ejercicio"><i class="fas fa-hands-helping"></i>Estiramientos Generales</p>
+                        <table class="tabla-parametros"><thead><tr><th>Componente</th><th>Duración</th></tr></thead><tbody><tr><td>Estiramientos de Cuádriceps, Isquios, Glúteos, Hombros, Pecho, Espalda</td><td>5-7 min total</td></tr></tbody></table>
+                        <div class="descripcion-ejercicio"><h5><i class="fas fa-info-circle"></i>Descripción:</h5><p>Estiramientos suaves para los principales grupos musculares trabajados.</p></div>
+                        <ul class="tecnica-ejercicio">
+                            <li>Estiramiento de Cuádriceps (de pie, llevando el talón al glúteo).</li>
+                            <li>Estiramiento de Isquiosurales (sentado o de pie, inclinándose hacia adelante con la espalda recta).</li>
+                            <li>Estiramiento de Glúteos (ej. figura 4 sentado o tumbado).</li>
+                            <li>Estiramiento de Hombros y Pecho (como en días anteriores).</li>
+                            <li>Estiramiento de Espalda (Postura del Niño).</li>
+                        </ul>
+                        <a href="#VIDEO_YOUTUBE_ENFRIAMIENTO_DIA3_S1" target="_blank" class="btn-youtube"><i class="fab fa-youtube mr-2"></i>Ver Rutina Enfriamiento</a>
+                    </div>
+                </div>
+                <div class="info-box-semana tip mt-6"><h4><i class="fas fa-lightbulb mr-2"></i>Reflexión Día 3 (Semana 1):</h4><p>El trabajo de cuerpo completo puede ser demandante. Presta atención a tu energía y asegúrate de descansar bien. Has completado la primera semana de empuje, tracción y trabajo de piernas/core. ¡Gran trabajo!</p></div>
+            </div>
+        </section> 
+        
+        <div class="info-box-semana ciencia mt-10">
+            <h4><i class="fas fa-flask"></i> La Ciencia Detrás de tu Primera Semana: Adaptación</h4>
+            <p>En esta primera semana, tu cuerpo está comenzando un proceso de <strong>adaptación neuromuscular</strong>. Esto significa que tu sistema nervioso está aprendiendo a reclutar y coordinar las fibras musculares de manera más eficiente para realizar los nuevos movimientos. También estás fortaleciendo tus <strong>tejidos conectivos</strong> (tendones y ligamentos), lo cual es crucial para prevenir lesiones a medida que progresas. No te desanimes si algunos movimientos se sienten extraños o difíciles; es parte normal del aprendizaje motor y la adaptación inicial.</p>
+        </div>
+    </div> 
+
+    <footer class="mt-12"> 
+        <div class="container mx-auto"> 
+            <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html" class="footer-logo">Askesis</a>
+            <p class="footer-tagline">Ciencia Aplicada al Movimiento.</p>
+            <p class="copyright-footer">© <span id="currentYearFooter"></span> Askesis. Todos los derechos reservados. <br> <a href="https://omniainbonum.github.io/WEB-Akesis/Web%20Askesis%202.html" class="hover:text-askesis-orange">Volver a la página principal</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearSpan = document.getElementById('currentYearFooter');
+            if(yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+            const header = document.querySelector('.main-header');
+            const body = document.body;
+            let headerHeight = 0;
+            
+            function updateHeaderHeightAndPadding() {
+                if (header) {
+                    headerHeight = header.offsetHeight;
+                    body.style.paddingTop = `${headerHeight}px`;
+                }
+            }
+            
+            updateHeaderHeightAndPadding(); 
+            window.addEventListener('resize', updateHeaderHeightAndPadding); 
+
+            // Smooth scroll para anclas internas de esta página (si las hubiera)
+             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    // Solo prevenir default para anclas internas reales, no para los botones de YouTube
+                    if (href.startsWith('#') && href.length > 1 && document.querySelector(href) && !this.classList.contains('btn-youtube')) { 
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                            e.preventDefault();
+                            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                            const offsetPosition = elementPosition - headerHeight;
+                            
+                            window.scrollTo({
+                                 top: offsetPosition,
+                                 behavior: "smooth"
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
